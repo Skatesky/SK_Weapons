@@ -1,0 +1,2 @@
+/Users/skate/Documents/RimWorldMod/MyMod/SK_Weapons/SK_Weapons/obj/Debug/SK_Weapons.csprojAssemblyReference.cache
+/Users/skate/Documents/RimWorldMod/MyMod/SK_Weapons/SK_Weapons/obj/Debug/SK_Weapons.csproj.CoreCompileInputs.cache

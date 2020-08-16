@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    
+    <!-- 洛神之枪， 风暴 -->
+
+	<!-- StormFlower custom bullet -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_SKStormFlower</defName>
+		<label>StormFlower bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/StormFlower_Projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>7</damageAmountBase>
+			<speed>60</speed>
+		</projectile>
+        <modExtensions>
+            <li Class="SK_Weapons.ModExtension_SKBaseBullet">
+                <addHediffChance>0.05</addHediffChance>
+                <hediffToAdd>Frostbite</hediffToAdd>
+            </li>
+        </modExtensions>
+        <thingClass>SK_Weapons.Projectile_SKBullet</thingClass>
+	</ThingDef>
+
+	<!-- StormFlower base weapon, melee can do slashing/cut damage, electric damage and burning damage, but doesn´t inflame -->
+
+	<ThingDef ParentName="SK_BaseMakeableGun">
+		<defName>Gun_SKStormFlower</defName>
+		<label>StormFlower</label>
+		<description>StormFlower is Lie Ren's signature weapon. They consist of a pair of fully automatic pistols with sickle-like blades attached vertically under the barrels.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Weapons/StormFlower</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<soundInteract>Interact_SMG</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>DustWeapons</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>30000</WorkToMake>
+			<MarketValue>800</MarketValue>
+			<Mass>2.0</Mass>
+			<AccuracyTouch>0.95</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.45</AccuracyMedium>
+			<AccuracyLong>0.25</AccuracyLong>
+			<RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>200</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Plasteel>20</Plasteel>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_SKStormFlower</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<range>28</range>
+				<burstShotCount>8</burstShotCount>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<soundCast>Shot_StormFlower</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+            <li>
+                <label>grip</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Cut</li>
+                    <li>Poke</li>                  
+				</capacities>
+				<power>19</power>
+				<cooldownTime>1.2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+</Defs>

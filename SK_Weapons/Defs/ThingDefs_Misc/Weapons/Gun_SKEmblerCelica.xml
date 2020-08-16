@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- 近距离的炮弹攻击 -->
+
+    <!-- Ember_Celica custom bullet -->
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>Bullet_SKEmberCelica</defName>
+        <label>Ember Celica bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Ember_Celica_Projectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <thingClass>Projectile_Explosive</thingClass>
+        <projectile>
+            <damageDef>Bomb_SKEmberCelica</damageDef>
+            <explosionRadius>0.5</explosionRadius>
+            <speed>50</speed>
+        </projectile>
+    </ThingDef>
+
+    <!-- Ember Celica base weapon, melee can do blunt damage, uses the same bomb type for melee and ranged  -->
+
+    <ThingDef ParentName="SK_BaseMakeableGun">
+        <defName>Gun_SKEmberCelica</defName>
+        <label>Ember_Celica</label>
+        <description>Ember Celica are Yang Xiao Long's signature weapons. They are a pair of Dual Ranged Shot Gauntlets (DRSG).</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/Weapons/Ember_Celica</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.9</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Shotgun</soundInteract>
+        <recipeMaker>
+            <researchPrerequisite>DustWeapons</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <statBases>
+            <WorkToMake>30000</WorkToMake>
+            <MarketValue>800</MarketValue>
+            <Mass>2.0</Mass>
+            <AccuracyTouch>0.85</AccuracyTouch>
+            <AccuracyShort>0.77</AccuracyShort>
+            <AccuracyMedium>0.38</AccuracyMedium>
+            <AccuracyLong>0.20</AccuracyLong>
+            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>200</Steel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Plasteel>20</Plasteel>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_SKEmberCelica</defaultProjectile>
+                <forcedMissRadius>0.5</forcedMissRadius>
+                <warmupTime>0.5</warmupTime>
+                <range>20</range>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <soundCast>Shot_Shotgun</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <equippedAngleOffset>-45</equippedAngleOffset>
+        <tools>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Bomb_SKEmberCelica</li>
+                </capacities>
+                <power>13</power>
+                <cooldownTime>0.8</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+</Defs>

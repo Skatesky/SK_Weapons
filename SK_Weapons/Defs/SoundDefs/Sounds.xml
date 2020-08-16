@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<SoundDef>
+		<defName>Shot_StormFlower</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>4</maxVoices>
+		<maxSimultaneous>4</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Shot_StormFlower</clipPath>         
+					</li>
+				</grains>
+				<volumeRange>
+					<min>80</min>        
+					<max>80</max>
+				</volumeRange> 
+				<pitchRange>
+					<min>0.8</min>
+					<max>0.9</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>  
+
+	<SoundDef>
+		<defName>Shot_Magnhild</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>4</maxVoices>
+		<maxSimultaneous>4</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Shot_Magnhild</clipPath>         
+					</li>
+				</grains>
+				<volumeRange>
+					<min>100</min>        
+					<max>100</max>
+				</volumeRange> 
+				<pitchRange>
+					<min>1</min>
+					<max>1</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>  
+
+	<SoundDef>
+		<defName>Interact_Magnhild_Launcher</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>4</maxVoices>
+		<maxSimultaneous>4</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Interact_Magnhild_Launcher</clipPath>         
+					</li>
+				</grains>
+				<volumeRange>
+					<min>80</min>        
+					<max>80</max>
+				</volumeRange> 
+				<pitchRange>
+					<min>1</min>
+					<max>1</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>  
+
+	<SoundDef>
+		<defName>Interact_Magnhild_Hammer</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>4</maxVoices>
+		<maxSimultaneous>4</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Interact_Magnhild_Hammer</clipPath>         
+					</li>
+				</grains>
+				<volumeRange>
+					<min>50</min>        
+					<max>50</max>
+				</volumeRange> 
+				<pitchRange>
+					<min>1</min>
+					<max>1</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>  
+
+	<SoundDef>
+		<defName>Draw_Gambol_Shroud_Katana</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>4</maxVoices>
+		<maxSimultaneous>4</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Draw_Gambol_Shroud_Katana</clipPath>         
+					</li>
+				</grains>
+				<volumeRange>
+					<min>60</min>        
+					<max>60</max>
+				</volumeRange> 
+				<pitchRange>
+					<min>1</min>
+					<max>1</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef> 
+	
+		<SoundDef>
+		<defName>Draw_Gambol_Shroud_Cleaver</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>4</maxVoices>
+		<maxSimultaneous>4</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Draw_Gambol_Shroud_Cleaver</clipPath>         
+					</li>
+				</grains>
+				<volumeRange>
+					<min>60</min>        
+					<max>60</max>
+				</volumeRange> 
+				<pitchRange>
+					<min>1</min>
+					<max>1</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef> 
+
+</Defs>

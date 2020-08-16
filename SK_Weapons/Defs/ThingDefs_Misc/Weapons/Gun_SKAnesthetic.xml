@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- 麻醉枪 -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>Bullet_AnestheticGun</defName>
+        <label>anesthetic bullet</label>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>10</damageAmountBase>
+            <stoppingPower>1.5</stoppingPower>
+            <speed>70</speed>
+        </projectile>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_big</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <modExtensions>
+            <li Class="SK_Weapons.ModExtension_SKBaseBullet">
+                <addHediffChance>0.05</addHediffChance>
+                <hediffToAdd>Hediff_SKAnesthetic</hediffToAdd>
+            </li>
+        </modExtensions>
+        <thingClass>SK_Weapons.Projectile_SKBullet</thingClass>
+    </ThingDef>
+    
+  <ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>Gun_SKAnesthetic</defName>
+		<label>anesthetic gun</label>
+		<description>An ancient pattern bolt-action rifle. This shoot the anesthetic bullet. It is low power, but it can neutralize the target with less damage.</description>
+		<graphicData>
+			<texPath>AnestheticGun/AnestheticGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.90</AccuracyMedium>
+      <AccuracyLong>0.80</AccuracyLong>
+      <RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown> <!-- Rifle is 1.5 -->
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+			<MedicineIndustrial>3</MedicineIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_AnestheticGun</defaultProjectile>
+        <warmupTime>1.7</warmupTime>
+        <range>36.9</range>
+        <soundCast>Shot_BoltActionRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <!-- anybody deny bring this weapon when raid and visitation. -->
+    <weaponTags Inherit="False">
+    </weaponTags>
+  </ThingDef>
+  
+</Defs>

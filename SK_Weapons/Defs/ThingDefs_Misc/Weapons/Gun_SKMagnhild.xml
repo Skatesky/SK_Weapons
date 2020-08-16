@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- 死神之枪，范围攻击 -->
+
+    <!-- Magnhild custom bullet -->
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>Bullet_SKMagnhild</defName>
+        <label>rocket</label>
+        <graphicData>
+            <texPath>Things/Projectile/Magnhild_Projectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <thingClass>Projectile_Explosive</thingClass>
+        <projectile>
+            <damageDef>Bomb_SKMagnhild</damageDef>
+            <explosionRadius>1.5</explosionRadius>
+            <speed>50</speed>
+        </projectile>
+    </ThingDef>
+
+    <!-- Magnhild base weapon, grenade launcher form, craftable-->
+
+    <ThingDef ParentName="SK_BaseMakeableGun">
+        <defName>Gun_SKMagnhild</defName>
+        <label>Magnhild</label>
+        <description>Magnhild is Nora Valkyrie's signature weapon. It is a large hammer, with the secondary form of a grenade launcher.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/Weapons/Magnhild_Launcher</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Magnhild_Launcher</soundInteract>
+        <recipeMaker>
+            <researchPrerequisite>DustWeapons</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <statBases>
+            <WorkToMake>30000</WorkToMake>
+            <MarketValue>800</MarketValue>
+            <Mass>6</Mass>
+            <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>200</Steel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Plasteel>20</Plasteel>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_SKMagnhild</defaultProjectile>
+                <forcedMissRadius>1</forcedMissRadius>
+                <warmupTime>2</warmupTime>
+                <range>40</range>
+                <burstShotCount>1</burstShotCount>
+                <soundCast>Shot_Magnhild</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>14</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <!-- 操作列表 -->
+            <li>
+                <label>grip</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <!-- 操作列表 战斗时的 -->
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>12.5</power>
+                <cooldownTime>2.5</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+</Defs>

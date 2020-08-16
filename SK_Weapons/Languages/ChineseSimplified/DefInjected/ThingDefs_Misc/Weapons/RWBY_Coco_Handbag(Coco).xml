@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Coco Handbag, craftable -->
+
+  <RWBY_Coco_Handbag.label>Coco的挎包</RWBY_Coco_Handbag.label>
+  <RWBY_Coco_Handbag.description>Coco Adel的专属武器为一门金黄色涂装加特林机炮，其杀伤力之大，足以将普通的Grimm生物射得粉碎。加特林机炮可折叠成一只挎包，这个挎包可以当做Coco的近战武器——像是一把没有柄的锤子，非常暴力。（原作没有提及名字 译者注）</RWBY_Coco_Handbag.description>
+  <RWBY_Coco_Handbag.tools.0.label>把手</RWBY_Coco_Handbag.tools.0.label>
+
+
+  <!-- Coco Minigun custom bullet -->
+
+  <Bullet_Coco_Gun.label>Coco的火神机炮子弹</Bullet_Coco_Gun.label>
+
+
+  <!-- Coco Minigun, not craftable -->
+
+  <RWBY_Coco_Gun.label>Coco的火神机炮</RWBY_Coco_Gun.label>
+  <RWBY_Coco_Gun.description>Coco Adel的专属武器为一门金黄色涂装加特林机炮，其杀伤力之大，足以将普通的Grimm生物射得粉碎。加特林机炮可折叠成一只挎包，这个挎包可以当做Coco的近战武器——像是一把没有柄的锤子，非常暴力。（原作没有提及名字 译者注）</RWBY_Coco_Gun.description>
+  <RWBY_Coco_Gun.tools.0.label>枪管</RWBY_Coco_Gun.tools.0.label>
+
+
+</LanguageData>

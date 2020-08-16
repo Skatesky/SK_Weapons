@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1BA18860-C242-4E5F-81E3-1004F2F344CB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SK_Weapons</RootNamespace>
+    <AssemblyName>SK_Weapons</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Assemblies</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>Assemblies</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source\Projectile_SKBullet.cs" />
+    <Compile Include="Source\HediffCompProperties_SeverityPerDayAfter.cs" />
+    <Compile Include="Source\ModExtension_SKBaseBullet.cs" />
+    <Compile Include="Source\HediffComp_SeverityPerDayAfter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="About\Preview.png" />
+    <None Include="About\About.xml" />
+    <None Include="Assemblies\.DS_Store" />
+    <None Include="Defs\DamageDefs\SK_Damages.xml" />
+    <None Include="Defs\Maneuvers\SK_Maneuvers.xml" />
+    <None Include="Defs\ResearchProjectDefs\ResearchProjects_Dust.xml" />
+    <None Include="Defs\HediffDefs\SK_AnestheticGunHediff.xml" />
+    <None Include="Defs\ToolCapacityDefs\SK_ToolCapacity.xml" />
+    <None Include="Defs\SoundDefs\Sounds.xml" />
+    <None Include="Defs\ThingDefs_Misc\Weapons\Gun_SKCoco.xml" />
+    <None Include="Defs\ThingDefs_Misc\Weapons\Gun_SKStormFlower.xml" />
+    <None Include="Defs\ThingDefs_Misc\Weapons\Gun_SKMagnhild.xml" />
+    <None Include="Defs\ThingDefs_Misc\Weapons\Gun_CrescentRose.xml" />
+    <None Include="Defs\ThingDefs_Misc\Weapons\Gun_SKEmblerCelica.xml" />
+    <None Include="Defs\ThingDefs_Misc\Weapons\SK_BaseWeapons.xml" />
+    <None Include="Defs\ThingDefs_Misc\Weapons\Melee_SKCinderScimitar.xml" />
+    <None Include="Defs\ThingDefs_Misc\Weapons\Gun_SKPlague.xml" />
+    <None Include="Defs\ThingDefs_Misc\Weapons\Gun_SKAnesthetic.xml" />
+    <None Include="Languages\ChineseSimplified\DefInjected\ResearchProjectDef\ResearchProjects_Dust.xml" />
+    <None Include="Languages\ChineseSimplified\DefInjected\RecipeDef\Recipes_Add_Make.xml" />
+    <None Include="Languages\ChineseSimplified\DefInjected\HediffDef\Hediffs_Local_Injuries_RWBY.xml" />
+    <None Include="Languages\ChineseSimplified\DefInjected\HediffDef\Hediffs_RWBY.xml" />
+    <None Include="Languages\ChineseSimplified\DefInjected\DamageDef\Damages_RWBY.xml" />
+    <None Include="Languages\ChineseSimplified\DefInjected\ThingDefs_Misc\Weapons\RWBY_Coco_Handbag%28Coco%29.xml" />
+    <None Include="Languages\ChineseSimplified\DefInjected\ThingDefs_Misc\Weapons\RWBY_Ember_Celica%28Yang%29.xml" />
+    <None Include="Languages\ChineseSimplified\DefInjected\ThingDefs_Misc\Weapons\RWBY_Magnhild%28Nora%29.xml" />
+    <None Include="Languages\ChineseSimplified\DefInjected\ThingDefs_Misc\Weapons\RWBY_StormFlower%28Lie%29.xml" />
+    <None Include="Languages\ChineseSimplified\DefInjected\ThingDefs_Misc\Weapons\Gun_SKPlague_Keys.xml" />
+    <None Include="Languages\ChineseSimplified\DefInjected\ThingDefs_Misc\Weapons\RWBY_Cinder_Weapons%28Cinder%29.xml" />
+    <None Include="Languages\ChineseSimplified\DefInjected\ThingDefs_Misc\Weapons\RWBY_Crescent_Rose%28Ruby%29.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Defs\ThingDefs\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

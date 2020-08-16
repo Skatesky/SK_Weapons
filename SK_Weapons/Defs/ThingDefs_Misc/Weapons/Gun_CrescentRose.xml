@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- 火神之枪 -->
+
+	<!-- Crescent Rose rifle custom bullet -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_SKCrescentRoseRifle</defName>
+		<label>Crescent Rose bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+            <damageDef>Flame</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>80</speed>
+		</projectile>
+	</ThingDef>
+
+	<!-- Crescent Rose base weapon, rifle form, craftable-->
+
+	<ThingDef ParentName="BaseMakeableGun_RWBY">
+		<defName>RWBY_Crescent_Rose_Rifle</defName>
+		<label>Crescent Rose</label>
+		<description>Crescent Rose is Ruby Rose's signature weapon. It is a High-Caliber Sniper-Scythe (HCSS) - a hybrid between a scythe and a sniper rifle.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Weapons/Crescent_Rose_Rifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>DustWeapons</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>30000</WorkToMake>
+			<MarketValue>800</MarketValue>
+			<Mass>4</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.80</AccuracyLong>
+			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>200</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Plasteel>20</Plasteel>
+		</costList>		
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_SKCrescentRoseRifle</defaultProjectile>				
+				<warmupTime>0.5</warmupTime>
+				<range>35</range>				
+				<soundCast>Shot_SniperRifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Poke</li>					
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>	   
+
+</Defs>
