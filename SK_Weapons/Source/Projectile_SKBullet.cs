@@ -20,7 +20,7 @@ namespace SK_Weapons
 
             if (Props != null && hitThing != null && hitThing is Pawn hitPawn)
             {
-                float rand = Rand.value;
+                float rand = Rand.Value;
                 if (rand <= Props.addHediffChance)
                 {
                     Messages.Message("SK_Bullet_SuccessMessage".Translate(

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- RWBY melee damage types, differentiate between slash, blunt etc. for a more immersive combat log -->
+	<!-- melee damage types, differentiate between slash, blunt etc. for a more immersive combat log -->
 
 	<!-- base games burn damage used as melee damage -->
 

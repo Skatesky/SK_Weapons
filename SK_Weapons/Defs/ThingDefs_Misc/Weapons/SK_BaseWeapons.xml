@@ -24,8 +24,8 @@
 	<!-- melee weapons that are craftable at the machining table, also needs gunsmithing, because every weapon is also a gun -->
 	<ThingDef Name="SK_BaseCraftableMeleeWeapon" Abstract="True" ParentName="SK_BaseMeleeWeapon">
 		<recipeMaker>
-			<workSpeedStat>SmithingSpeed</workSpeedStat>
-			<workSkill>Crafting</workSkill>
+<!--			<workSpeedStat>SmithingSpeed</workSpeedStat>
+-->			<workSkill>Crafting</workSkill>
 			<effectWorking>Smith</effectWorking>
 			<soundWorking>Recipe_Smith</soundWorking>
 			<recipeUsers>
@@ -62,7 +62,7 @@
 	<!-- craftable ranged weapons-->
 	<ThingDef Name="SK_BaseMakeableGun" ParentName="SK_BaseGun" Abstract="True">
 		<recipeMaker>
-			<workSpeedStat>SmithingSpeed</workSpeedStat>
+<!--			<workSpeedStat>SmithingSpeed</workSpeedStat>-->
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Smith</effectWorking>
 			<soundWorking>Recipe_Smith</soundWorking>

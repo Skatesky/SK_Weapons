@@ -1,20 +1,19 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.ItemProperties.SK__Weapons FirstBuild="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SK_Weapons/Defs/ThingDefs_Misc/Weapons/Gun_SKPlague.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SK_Weapons/Defs/ThingDefs_Misc/Weapons/Gun_CrescentRose.xml">
     <Files>
-      <File FileName="SK_Weapons/Defs/ThingDefs_Misc/Weapons/Gun_CrescentRose.xml" Line="31" Column="16" />
+      <File FileName="SK_Weapons/Defs/ThingDefs_Misc/Weapons/Gun_CrescentRose.xml" Line="24" Column="40" />
       <File FileName="SK_Weapons/Defs/ThingDefs_Misc/Weapons/RWBY_Coco_Handbag(Coco).xml" Line="19" Column="25" />
       <File FileName="SK_Weapons/Defs/ThingDefs_Misc/Weapons/RWBY_StormFlower(Lie).xml" Line="18" Column="15" />
-      <File FileName="SK_Weapons/Defs/ThingDefs_Misc/Weapons/RWBY_Cinder_Weapons(Cinder).xml" Line="9" Column="28" />
+      <File FileName="SK_Weapons/Defs/ThingDefs_Misc/Weapons/RWBY_Cinder_Weapons(Cinder).xml" Line="7" Column="34" />
       <File FileName="SK_Weapons/Defs/DamageDefs/SK_Damages.xml" Line="15" Column="21" />
       <File FileName="SK_Weapons/Defs/ToolCapacityDefs/ToolCapacity_RWBY.xml" Line="12" Column="1" />
       <File FileName="SK_Weapons/Defs/Maneuvers/Maneuvers_RWBY.xml" Line="18" Column="16" />
       <File FileName="SK_Weapons/Defs/ThingDefs_Misc/Weapons/Gun_SKMagnhild.xml" Line="30" Column="43" />
-      <File FileName="SK_Weapons/Defs/ThingDefs_Misc/Weapons/SK_BaseWeapons.xml" Line="25" Column="45" />
-      <File FileName="SK_Weapons/Source/Projectile_SKBullet.cs" Line="23" Column="27" />
-      <File FileName="SK_Weapons/Source/ModExtension_SKBaseBullet.cs" Line="11" Column="10" />
+      <File FileName="SK_Weapons/Defs/ThingDefs_Misc/Weapons/SK_BaseWeapons.xml" Line="24" Column="23" />
+      <File FileName="SK_Weapons/Source/Projectile_SKBullet.cs" Line="23" Column="38" />
+      <File FileName="SK_Weapons/Source/ModExtension_SKBaseBullet.cs" Line="14" Column="1" />
       <File FileName="SK_Weapons/Defs/ThingDefs/AnestheticGun.xml" Line="86" Column="30" />
-      <File FileName="SK_Weapons/Defs/ThingDefs_Misc/Weapons/RangedWeapon_TestGun.xml" Line="43" Column="18" />
+      <File FileName="SK_Weapons/Defs/ThingDefs_Misc/Weapons/RangedWeapon_TestGun.xml" Line="53" Column="36" />
       <File FileName="SK_Weapons/Source/HediffComp_SeverityPerDayAfter.cs" Line="9" Column="39" />
       <File FileName="SK_Weapons/Defs/ResearchProjectDefs/ResearchProjects_Dust.xml" Line="17" Column="24" />
       <File FileName="SK_Weapons/Defs/SoundDefs/Sounds_RWBY.xml" Line="18" Column="6" />
@@ -22,9 +21,6 @@
       <File FileName="SK_Weapons/Defs/HediffDefs/SK_AnestheticGunHediff.xml" Line="17" Column="11" />
       <File FileName="SK_Weapons/Defs/ThingDefs_Misc/Weapons/Gun_SKEmblerCelica.xml" Line="19" Column="16" />
       <File FileName="SK_Weapons/Languages/ChineseSimplified/DefInjected/ThingDefs_Misc/Weapons/Gun_SKPlague_Keys.xml" Line="3" Column="33" />
-      <File FileName="SK_Weapons/Languages/ChineseSimplified/DefInjected/ThingDefs_Misc/Weapons/RWBY_StormFlower(Lie).xml" Line="1" Column="1" />
-      <File FileName="SK_Weapons/Languages/ChineseSimplified/DefInjected/RecipeDef/Recipes_Add_Make.xml" Line="17" Column="33" />
-      <File FileName="SK_Weapons/Languages/ChineseSimplified/DefInjected/ThingDefs_Misc/Weapons/RWBY_Cinder_Weapons(Cinder).xml" Line="19" Column="7" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -39,21 +35,13 @@
                 <Node name="SoundDefs" expanded="True" />
                 <Node name="ThingDefs_Misc" expanded="True">
                   <Node name="Weapons" expanded="True">
-                    <Node name="Gun_SKPlague.xml" selected="True" />
+                    <Node name="Gun_CrescentRose.xml" selected="True" />
                   </Node>
                 </Node>
                 <Node name="ToolCapacityDefs" expanded="True" />
               </Node>
               <Node name="Languages" expanded="True">
-                <Node name="ChineseSimplified" expanded="True">
-                  <Node name="DefInjected" expanded="True">
-                    <Node name="RecipeDef" expanded="True" />
-                    <Node name="ResearchProjectDef" expanded="True" />
-                    <Node name="ThingDefs_Misc" expanded="True">
-                      <Node name="Weapons" expanded="True" />
-                    </Node>
-                  </Node>
-                </Node>
+                <Node name="ChineseSimplified" expanded="True" />
               </Node>
               <Node name="Source" expanded="True" />
             </Node>

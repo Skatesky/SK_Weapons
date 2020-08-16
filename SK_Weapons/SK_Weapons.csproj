@@ -28,6 +28,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\Library\Application Support\Steam\steamapps\workshop\content\294100\2128611954\Source\bin\Release\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\Library\Application Support\Steam\steamapps\workshop\content\294100\2128611954\Source\bin\Release\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\Library\Application Support\Steam\steamapps\workshop\content\294100\1588616696\Source\MedievalShields\Assembly-CSharp.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -55,18 +64,7 @@
     <None Include="Defs\ThingDefs_Misc\Weapons\Melee_SKCinderScimitar.xml" />
     <None Include="Defs\ThingDefs_Misc\Weapons\Gun_SKPlague.xml" />
     <None Include="Defs\ThingDefs_Misc\Weapons\Gun_SKAnesthetic.xml" />
-    <None Include="Languages\ChineseSimplified\DefInjected\ResearchProjectDef\ResearchProjects_Dust.xml" />
-    <None Include="Languages\ChineseSimplified\DefInjected\RecipeDef\Recipes_Add_Make.xml" />
-    <None Include="Languages\ChineseSimplified\DefInjected\HediffDef\Hediffs_Local_Injuries_RWBY.xml" />
-    <None Include="Languages\ChineseSimplified\DefInjected\HediffDef\Hediffs_RWBY.xml" />
-    <None Include="Languages\ChineseSimplified\DefInjected\DamageDef\Damages_RWBY.xml" />
-    <None Include="Languages\ChineseSimplified\DefInjected\ThingDefs_Misc\Weapons\RWBY_Coco_Handbag%28Coco%29.xml" />
-    <None Include="Languages\ChineseSimplified\DefInjected\ThingDefs_Misc\Weapons\RWBY_Ember_Celica%28Yang%29.xml" />
-    <None Include="Languages\ChineseSimplified\DefInjected\ThingDefs_Misc\Weapons\RWBY_Magnhild%28Nora%29.xml" />
-    <None Include="Languages\ChineseSimplified\DefInjected\ThingDefs_Misc\Weapons\RWBY_StormFlower%28Lie%29.xml" />
-    <None Include="Languages\ChineseSimplified\DefInjected\ThingDefs_Misc\Weapons\Gun_SKPlague_Keys.xml" />
-    <None Include="Languages\ChineseSimplified\DefInjected\ThingDefs_Misc\Weapons\RWBY_Cinder_Weapons%28Cinder%29.xml" />
-    <None Include="Languages\ChineseSimplified\DefInjected\ThingDefs_Misc\Weapons\RWBY_Crescent_Rose%28Ruby%29.xml" />
+    <None Include="Languages\ChineseSimplified\Gun_SKPlague_Keys.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Defs\ThingDefs\" />

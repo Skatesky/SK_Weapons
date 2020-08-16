@@ -28,7 +28,7 @@
 		<label>anesthetic gun</label>
 		<description>An ancient pattern bolt-action rifle. This shoot the anesthetic bullet. It is low power, but it can neutralize the target with less damage.</description>
 		<graphicData>
-			<texPath>AnestheticGun/AnestheticGun</texPath>
+			<texPath>Things/Item/Equipment/Weapons/Gun_Anesthetic</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
     <soundInteract>Interact_Rifle</soundInteract>

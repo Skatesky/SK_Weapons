@@ -21,8 +21,8 @@
 
 	<!-- Crescent Rose base weapon, rifle form, craftable-->
 
-	<ThingDef ParentName="BaseMakeableGun_RWBY">
-		<defName>RWBY_Crescent_Rose_Rifle</defName>
+	<ThingDef ParentName="SK_BaseMakeableGun">
+		<defName>Gun_SKCrescentRoseRifle</defName>
 		<label>Crescent Rose</label>
 		<description>Crescent Rose is Ruby Rose's signature weapon. It is a High-Caliber Sniper-Scythe (HCSS) - a hybrid between a scythe and a sniper rifle.</description>
 		<graphicData>
