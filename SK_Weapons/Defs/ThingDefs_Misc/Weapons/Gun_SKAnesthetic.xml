@@ -6,7 +6,7 @@
         <label>anesthetic bullet</label>
         <projectile>
             <damageDef>Bullet</damageDef>
-            <damageAmountBase>10</damageAmountBase>
+            <damageAmountBase>13</damageAmountBase>
             <stoppingPower>1.5</stoppingPower>
             <speed>70</speed>
         </projectile>
@@ -56,8 +56,8 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_AnestheticGun</defaultProjectile>
-        <warmupTime>1.7</warmupTime>
-        <range>36.9</range>
+        <warmupTime>1.2</warmupTime>
+        <range>40</range>
         <soundCast>Shot_BoltActionRifle</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>

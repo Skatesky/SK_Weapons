@@ -64,7 +64,18 @@
     <None Include="Defs\ThingDefs_Misc\Weapons\Melee_SKCinderScimitar.xml" />
     <None Include="Defs\ThingDefs_Misc\Weapons\Gun_SKPlague.xml" />
     <None Include="Defs\ThingDefs_Misc\Weapons\Gun_SKAnesthetic.xml" />
-    <None Include="Languages\ChineseSimplified\Gun_SKPlague_Keys.xml" />
+    <None Include="Languages\ChineseSimplified\DefInjected\ResearchProjectDef\ResearchProjects_Dust.xml" />
+    <None Include="Languages\ChineseSimplified\DefInjected\RecipeDef\Recipes_Add_Make.xml" />
+    <None Include="Languages\ChineseSimplified\DefInjected\HediffDef\Hediffs_Local_Injuries_RWBY.xml" />
+    <None Include="Languages\ChineseSimplified\DefInjected\HediffDef\Hediffs_RWBY.xml" />
+    <None Include="Languages\ChineseSimplified\DefInjected\DamageDef\Damages_Keys.xml" />
+    <None Include="Languages\ChineseSimplified\DefInjected\ThingDefs_Misc\Weapons\Gun_SKCoco_Keys.xml" />
+    <None Include="Languages\ChineseSimplified\DefInjected\ThingDefs_Misc\Weapons\Gun_SKEmblerCelica_Keys.xml" />
+    <None Include="Languages\ChineseSimplified\DefInjected\ThingDefs_Misc\Weapons\Gun_SKMagnhild_Keys.xml" />
+    <None Include="Languages\ChineseSimplified\DefInjected\ThingDefs_Misc\Weapons\Gun_SKStormFlower_Keys.xml" />
+    <None Include="Languages\ChineseSimplified\DefInjected\ThingDefs_Misc\Weapons\Melee_SKCinderScimitar_Keys.xml" />
+    <None Include="Languages\ChineseSimplified\DefInjected\ThingDefs_Misc\Weapons\Gun_CrescentRose_Keys.xml" />
+    <None Include="Languages\ChineseSimplified\DefInjected\ThingDefs_Misc\Weapons\Gun_SKPlague_Keys.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Defs\ThingDefs\" />

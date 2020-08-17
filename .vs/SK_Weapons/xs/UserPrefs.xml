@@ -1,32 +1,45 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="SK_Weapons/Defs/ThingDefs_Misc/Weapons/Gun_CrescentRose.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SK_Weapons/About/About.xml">
     <Files>
-      <File FileName="SK_Weapons/Defs/ThingDefs_Misc/Weapons/Gun_CrescentRose.xml" Line="24" Column="40" />
-      <File FileName="SK_Weapons/Defs/ThingDefs_Misc/Weapons/RWBY_Coco_Handbag(Coco).xml" Line="19" Column="25" />
-      <File FileName="SK_Weapons/Defs/ThingDefs_Misc/Weapons/RWBY_StormFlower(Lie).xml" Line="18" Column="15" />
-      <File FileName="SK_Weapons/Defs/ThingDefs_Misc/Weapons/RWBY_Cinder_Weapons(Cinder).xml" Line="7" Column="34" />
-      <File FileName="SK_Weapons/Defs/DamageDefs/SK_Damages.xml" Line="15" Column="21" />
-      <File FileName="SK_Weapons/Defs/ToolCapacityDefs/ToolCapacity_RWBY.xml" Line="12" Column="1" />
-      <File FileName="SK_Weapons/Defs/Maneuvers/Maneuvers_RWBY.xml" Line="18" Column="16" />
-      <File FileName="SK_Weapons/Defs/ThingDefs_Misc/Weapons/Gun_SKMagnhild.xml" Line="30" Column="43" />
-      <File FileName="SK_Weapons/Defs/ThingDefs_Misc/Weapons/SK_BaseWeapons.xml" Line="24" Column="23" />
-      <File FileName="SK_Weapons/Source/Projectile_SKBullet.cs" Line="23" Column="38" />
-      <File FileName="SK_Weapons/Source/ModExtension_SKBaseBullet.cs" Line="14" Column="1" />
-      <File FileName="SK_Weapons/Defs/ThingDefs/AnestheticGun.xml" Line="86" Column="30" />
-      <File FileName="SK_Weapons/Defs/ThingDefs_Misc/Weapons/RangedWeapon_TestGun.xml" Line="53" Column="36" />
-      <File FileName="SK_Weapons/Source/HediffComp_SeverityPerDayAfter.cs" Line="9" Column="39" />
-      <File FileName="SK_Weapons/Defs/ResearchProjectDefs/ResearchProjects_Dust.xml" Line="17" Column="24" />
-      <File FileName="SK_Weapons/Defs/SoundDefs/Sounds_RWBY.xml" Line="18" Column="6" />
-      <File FileName="SK_Weapons/Source/HediffCompProperties_SeverityPerDayAfter.cs" Line="14" Column="1" />
-      <File FileName="SK_Weapons/Defs/HediffDefs/SK_AnestheticGunHediff.xml" Line="17" Column="11" />
-      <File FileName="SK_Weapons/Defs/ThingDefs_Misc/Weapons/Gun_SKEmblerCelica.xml" Line="19" Column="16" />
-      <File FileName="SK_Weapons/Languages/ChineseSimplified/DefInjected/ThingDefs_Misc/Weapons/Gun_SKPlague_Keys.xml" Line="3" Column="33" />
+      <File FileName="SK_Weapons/Defs/ThingDefs_Misc/Weapons/Gun_CrescentRose.xml" Line="25" Column="35" />
+      <File FileName="SK_Weapons/Defs/DamageDefs/SK_Damages.xml" Line="11" Column="34" />
+      <File FileName="SK_Weapons/Defs/ThingDefs_Misc/Weapons/Gun_SKMagnhild.xml" Line="26" Column="32" />
+      <File FileName="SK_Weapons/Defs/ThingDefs_Misc/Weapons/SK_BaseWeapons.xml" />
+      <File FileName="SK_Weapons/Source/Projectile_SKBullet.cs" />
+      <File FileName="SK_Weapons/Source/ModExtension_SKBaseBullet.cs" />
+      <File FileName="SK_Weapons/Source/HediffComp_SeverityPerDayAfter.cs" />
+      <File FileName="SK_Weapons/Defs/ResearchProjectDefs/ResearchProjects_Dust.xml" />
+      <File FileName="SK_Weapons/Source/HediffCompProperties_SeverityPerDayAfter.cs" />
+      <File FileName="SK_Weapons/Defs/HediffDefs/SK_AnestheticGunHediff.xml" />
+      <File FileName="SK_Weapons/Defs/ThingDefs_Misc/Weapons/Gun_SKEmblerCelica.xml" Line="26" Column="35" />
+      <File FileName="SK_Weapons/Defs/ThingDefs_Misc/Weapons/Gun_SKCoco.xml" Line="20" Column="22" />
+      <File FileName="SK_Weapons/Languages/ChineseSimplified/DefInjected/ThingDefs_Misc/Weapons/Gun_SKCoco_Keys.xml" />
+      <File FileName="SK_Weapons/Languages/ChineseSimplified/DefInjected/ThingDefs_Misc/Weapons/Melee_SKCinderScimitar_Keys.xml" />
+      <File FileName="SK_Weapons/Languages/ChineseSimplified/DefInjected/ThingDefs_Misc/Weapons/Gun_SKPlague_Keys.xml" />
+      <File FileName="SK_Weapons/Defs/ThingDefs_Misc/Weapons/Gun_SKPlague.xml" />
+      <File FileName="SK_Weapons/Defs/ThingDefs_Misc/Weapons/Melee_SKCinderScimitar.xml" />
+      <File FileName="SK_Weapons/Languages/ChineseSimplified/DefInjected/ThingDefs_Misc/Weapons/Gun_CrescentRose_Keys.xml" />
+      <File FileName="SK_Weapons/Languages/ChineseSimplified/DefInjected/ThingDefs_Misc/Weapons/Gun_SKEmblerCelica_Keys.xml" />
+      <File FileName="SK_Weapons/Languages/ChineseSimplified/DefInjected/ThingDefs_Misc/Weapons/Gun_SKMagnhild_Keys.xml" />
+      <File FileName="SK_Weapons/Defs/ThingDefs_Misc/Weapons/Gun_SKStormFlower.xml" Line="4" Column="14" />
+      <File FileName="SK_Weapons/Languages/ChineseSimplified/DefInjected/ThingDefs_Misc/Weapons/Gun_SKStormFlower_Keys.xml" />
+      <File FileName="SK_Weapons/Defs/ThingDefs_Misc/Weapons/Gun_SKAnesthetic.xml" />
+      <File FileName="SK_Weapons/Defs/Maneuvers/SK_Maneuvers.xml" />
+      <File FileName="SK_Weapons/Languages/ChineseSimplified/DefInjected/ResearchProjectDef/ResearchProjects_Dust.xml" Line="8" Column="16" />
+      <File FileName="SK_Weapons/Languages/ChineseSimplified/DefInjected/RecipeDef/Recipes_Add_Make.xml" Line="11" Column="57" />
+      <File FileName="SK_Weapons/Languages/ChineseSimplified/DefInjected/HediffDef/Hediffs_Local_Injuries_RWBY.xml" Line="7" Column="16" />
+      <File FileName="SK_Weapons/Languages/ChineseSimplified/DefInjected/HediffDef/Hediffs_RWBY.xml" Line="18" Column="16" />
+      <File FileName="SK_Weapons/Languages/ChineseSimplified/DefInjected/DamageDef/Damages_RWBY.xml" Line="5" Column="3" />
+      <File FileName="SK_Weapons/About/About.xml" Line="8" Column="44" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="SK_Weapons" expanded="True">
             <Node name="SK_Weapons" expanded="True">
+              <Node name="About" expanded="True">
+                <Node name="About.xml" selected="True" />
+              </Node>
               <Node name="Defs" expanded="True">
                 <Node name="DamageDefs" expanded="True" />
                 <Node name="HediffDefs" expanded="True" />
@@ -34,14 +47,22 @@
                 <Node name="ResearchProjectDefs" expanded="True" />
                 <Node name="SoundDefs" expanded="True" />
                 <Node name="ThingDefs_Misc" expanded="True">
-                  <Node name="Weapons" expanded="True">
-                    <Node name="Gun_CrescentRose.xml" selected="True" />
-                  </Node>
+                  <Node name="Weapons" expanded="True" />
                 </Node>
                 <Node name="ToolCapacityDefs" expanded="True" />
               </Node>
               <Node name="Languages" expanded="True">
-                <Node name="ChineseSimplified" expanded="True" />
+                <Node name="ChineseSimplified" expanded="True">
+                  <Node name="DefInjected" expanded="True">
+                    <Node name="DamageDef" expanded="True" />
+                    <Node name="HediffDef" expanded="True" />
+                    <Node name="RecipeDef" expanded="True" />
+                    <Node name="ResearchProjectDef" expanded="True" />
+                    <Node name="ThingDefs_Misc" expanded="True">
+                      <Node name="Weapons" expanded="True" />
+                    </Node>
+                  </Node>
+                </Node>
               </Node>
               <Node name="Source" expanded="True" />
             </Node>

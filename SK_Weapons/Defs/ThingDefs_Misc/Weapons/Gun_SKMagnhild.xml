@@ -15,7 +15,7 @@
         <thingClass>Projectile_Explosive</thingClass>
         <projectile>
             <damageDef>Bomb_SKMagnhild</damageDef>
-            <explosionRadius>1.5</explosionRadius>
+            <explosionRadius>2</explosionRadius>
             <speed>50</speed>
         </projectile>
     </ThingDef>
@@ -55,8 +55,8 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_SKMagnhild</defaultProjectile>
                 <forcedMissRadius>1</forcedMissRadius>
-                <warmupTime>2</warmupTime>
-                <range>40</range>
+                <warmupTime>1.5</warmupTime>
+                <range>45</range>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>Shot_Magnhild</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>

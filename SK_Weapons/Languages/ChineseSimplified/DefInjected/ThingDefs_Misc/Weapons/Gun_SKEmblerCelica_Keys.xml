@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ember_Celica custom bullet -->
+
+  <Bullet_SKEmberCelica.label>灰烬天堂子弹</Bullet_SKEmberCelica.label>
+
+
+  <!-- Ember Celica base weapon, melee can do blunt damage, uses the same bomb type for melee and ranged -->
+
+  <Gun_SKEmberCelica.label>灰烬天堂(Ember Celica)</Gun_SKEmberCelica.label>
+  <Gun_SKEmberCelica.description>Yang的专属武器灰烬天堂(Ember Celica)为一对金黄色的臂铠霰弹枪，默认双持，平时折叠成手镯形态，战斗时可迅速展开。</Gun_SKEmberCelica.description>
+  <Gun_SKEmberCelica.tools.0.label>枪管</Gun_SKEmberCelica.tools.0.label>
+ 
+
+</LanguageData>

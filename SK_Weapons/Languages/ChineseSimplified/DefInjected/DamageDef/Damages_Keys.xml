@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- base games burn damage used as melee damage -->
+  
+  <!-- base games inflame damage used as melee damage -->
+
+  <SK_Inflame_Slash.label>焚烧</SK_Inflame_Slash.label>
+  <SK_Inflame_Slash.deathMessage>{0} 被焚烧至死.</SK_Inflame_Slash.deathMessage>
+
+  
+  <!-- base game bomb with less damage for Magnhild -->
+
+  <Bomb_SKMagnhild.label>爆炸</Bomb_SKMagnhild.label>
+  <Bomb_SKMagnhild.deathMessage>{0} 死于爆炸.</Bomb_SKMagnhild.deathMessage>
+
+
+  <!-- base game bomb with little damage for Ember Celica -->
+
+  <Bomb_SKEmberCelica.label>爆炸</Bomb_SKEmberCelica.label>
+  <Bomb_SKEmberCelica.deathMessage>{0} 死于爆炸.</Bomb_SKEmberCelica.deathMessage>
+
+
+</LanguageData>

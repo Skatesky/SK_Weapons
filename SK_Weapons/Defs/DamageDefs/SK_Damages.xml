@@ -30,7 +30,7 @@
 		<impactSoundType>Blunt</impactSoundType>
 		<armorCategory>Sharp</armorCategory>
 		<minDamageToFragment>15</minDamageToFragment>
-		<defaultDamage>20</defaultDamage>
+		<defaultDamage>24</defaultDamage>
 		<defaultStoppingPower>0.5</defaultStoppingPower>
 		<defaultArmorPenetration>0.10</defaultArmorPenetration>
 		<buildingDamageFactor>4</buildingDamageFactor>
@@ -58,7 +58,7 @@
 		<impactSoundType>Blunt</impactSoundType>
 		<armorCategory>Sharp</armorCategory>
 		<minDamageToFragment>15</minDamageToFragment>
-		<defaultDamage>12</defaultDamage>
+		<defaultDamage>16</defaultDamage>
 		<defaultStoppingPower>0.5</defaultStoppingPower>
 		<defaultArmorPenetration>0.10</defaultArmorPenetration>
 		<buildingDamageFactor>4</buildingDamageFactor>

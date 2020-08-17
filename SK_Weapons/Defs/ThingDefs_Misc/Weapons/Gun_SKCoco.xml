@@ -11,7 +11,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>8</damageAmountBase>
+			<damageAmountBase>10</damageAmountBase>
 			<speed>70</speed>
 		</projectile>
 	</ThingDef>
@@ -30,10 +30,10 @@
 			<WorkToMake>30000</WorkToMake>
 			<MarketValue>800</MarketValue>
 			<Mass>6</Mass>
-			<AccuracyTouch>0.40</AccuracyTouch>
-			<AccuracyShort>0.31</AccuracyShort>
-			<AccuracyMedium>0.22</AccuracyMedium>
-			<AccuracyLong>0.13</AccuracyLong>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.41</AccuracyShort>
+			<AccuracyMedium>0.32</AccuracyMedium>
+			<AccuracyLong>0.23</AccuracyLong>
 			<RangedWeapon_Cooldown>0.05</RangedWeapon_Cooldown>
 		</statBases>
 		<verbs>
@@ -42,7 +42,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_SKCoco</defaultProjectile>
 				<warmupTime>0.05</warmupTime>
-				<range>30.9</range>
+				<range>34</range>
 				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
 				<soundCast>Shot_Minigun</soundCast>

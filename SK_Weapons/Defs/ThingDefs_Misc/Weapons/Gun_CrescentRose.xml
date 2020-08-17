@@ -13,9 +13,9 @@
 		</graphicData>
 		<projectile>
             <damageDef>Flame</damageDef>
-			<damageAmountBase>18</damageAmountBase>
+			<damageAmountBase>20</damageAmountBase>
 			<stoppingPower>1</stoppingPower>
-			<speed>80</speed>
+			<speed>90</speed>
 		</projectile>
 	</ThingDef>
 
@@ -43,7 +43,7 @@
 			<Mass>4</Mass>
 			<AccuracyTouch>0.60</AccuracyTouch>
 			<AccuracyShort>0.70</AccuracyShort>
-			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyMedium>0.85</AccuracyMedium>
 			<AccuracyLong>0.80</AccuracyLong>
 			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
 		</statBases>
@@ -58,7 +58,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_SKCrescentRoseRifle</defaultProjectile>				
 				<warmupTime>0.5</warmupTime>
-				<range>35</range>				
+				<range>45</range>				
 				<soundCast>Shot_SniperRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
