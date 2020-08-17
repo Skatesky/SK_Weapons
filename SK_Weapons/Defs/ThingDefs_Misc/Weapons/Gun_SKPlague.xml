@@ -51,12 +51,6 @@
     <soundInteract>Interact_Revolver</soundInteract>
     <!-- 个人猜测是艺术系统的标签 -->
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
-    <recipeMaker>
-        <researchPrerequisite>DustWeapons</researchPrerequisite>
-        <skillRequirements>
-            <Crafting>8</Crafting>
-        </skillRequirements>
-    </recipeMaker>
     <!-- 基础属性 -->
     <statBases>
     <!-- 制作的工作量 -->
