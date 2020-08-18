@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- StormFlower custom bullet -->
+
+  <Bullet_SKStormFlower.label>洛神之枪子弹</Bullet_SKStormFlower.label>
+
+
+  <!-- StormFlower base weapon, melee can do slashing/cut damage, electric damage and burning damage, but doesn´t inflame -->
+
+  <Gun_SKStormFlower.label>洛神之枪</Gun_SKStormFlower.label>
+  <Gun_SKStormFlower.description>传说中洛神使用的枪支，射速快，附带冰冻效果。</Gun_SKStormFlower.description>
+  <Gun_SKStormFlower.tools.0.label>枪管</Gun_SKStormFlower.tools.0.label>
+
+
+</LanguageData>

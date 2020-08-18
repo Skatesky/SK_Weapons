@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-
-	<Melee_SKCinderScimitar.label>Cinder的短弯刀</Melee_SKCinderScimitar.label>
-	<Melee_SKCinderScimitar.description>Cinder早年的专属武器为一对可拼凑成长弓的双刀，灰白色亚光金属风格，带一点红色纹理。</Melee_SKCinderScimitar.description>
-	<Melee_SKCinderScimitar.tools.0.label>刀刃</Melee_SKCinderScimitar.tools.0.label>
-	<Melee_SKCinderScimitar.tools.1.label>刀锋</Melee_SKCinderScimitar.tools.1.label>
-
-</LanguageData>
