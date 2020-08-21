@@ -65,7 +65,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_SKStormFlower</defaultProjectile>
 				<warmupTime>0.5</warmupTime>
-				<range>32</range>
+				<range>35</range>
 				<burstShotCount>8</burstShotCount>
 				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
 				<soundCast>Shot_StormFlower</soundCast>

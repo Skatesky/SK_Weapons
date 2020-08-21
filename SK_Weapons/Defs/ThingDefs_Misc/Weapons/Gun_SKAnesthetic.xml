@@ -47,8 +47,9 @@
 			<MedicineIndustrial>3</MedicineIndustrial>
     </costList>
     <recipeMaker>
+      <researchPrerequisite>DustWeapons</researchPrerequisite>
       <skillRequirements>
-        <Crafting>5</Crafting>
+        <Crafting>8</Crafting>
       </skillRequirements>
     </recipeMaker>
     <verbs>
