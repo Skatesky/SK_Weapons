@@ -25,7 +25,7 @@
     </projectile>
     <modExtensions>
         <li Class="SK_Weapons.ModExtension_SKBaseBullet">
-            <addHediffChance>0.05</addHediffChance>
+            <addHediffChance>0.1</addHediffChance>
             <hediffToAdd>Plague</hediffToAdd>
         </li>
     </modExtensions>
@@ -97,7 +97,7 @@
         <!-- 预热时间 -->
         <warmupTime>0.3</warmupTime>
         <!-- 射击距离 -->
-        <range>35</range>
+        <range>40</range>
         <!-- 射击时使用的音效 -->
         <soundCast>Shot_Revolver</soundCast>
         <!-- 中弹时的音效 -->
