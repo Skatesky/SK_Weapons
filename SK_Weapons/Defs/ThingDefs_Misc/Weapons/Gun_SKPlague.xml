@@ -78,9 +78,11 @@
       <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <recipeMaker>
-    <!-- 技能需求 -->
+      <!-- 研究需求 -->
+      <researchPrerequisite>DustWeapons</researchPrerequisite>
+      <!-- 技能需求 -->
       <skillRequirements>
-        <Crafting>5</Crafting>
+        <Crafting>8</Crafting>
       </skillRequirements>
     </recipeMaker>
     <!-- 动作 -->

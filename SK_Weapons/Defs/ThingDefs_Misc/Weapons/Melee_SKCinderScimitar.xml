@@ -13,6 +13,12 @@
 			<drawSize>1.4</drawSize>
 		</graphicData>
 		<soundInteract>Interact_BeatFire</soundInteract>
+        <recipeMaker>
+            <researchPrerequisite>DustWeapons</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+        </recipeMaker>
 		<statBases>
 			<WorkToMake>30000</WorkToMake>
 			<MarketValue>800</MarketValue>

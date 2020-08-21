@@ -25,7 +25,13 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.6</drawSize>
 		</graphicData>
-		<soundInteract>Interact_Rifle</soundInteract>		
+		<soundInteract>Interact_Rifle</soundInteract>
+        <recipeMaker>
+            <researchPrerequisite>DustWeapons</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+        </recipeMaker>
 		<statBases>
 			<WorkToMake>30000</WorkToMake>
 			<MarketValue>800</MarketValue>

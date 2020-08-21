@@ -35,7 +35,7 @@
         <recipeMaker>
             <researchPrerequisite>DustWeapons</researchPrerequisite>
             <skillRequirements>
-                <Crafting>8</Crafting>
+                <Crafting>10</Crafting>
             </skillRequirements>
         </recipeMaker>
         <statBases>

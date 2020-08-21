@@ -1,2 +1,3 @@
-# Rimworld Gun
-rimworld mod教程 - 武器制作
+# Rimworld Weapons
+
+自制的一些武器
