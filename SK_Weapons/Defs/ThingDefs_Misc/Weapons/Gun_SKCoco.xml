@@ -42,6 +42,11 @@
 			<AccuracyLong>0.23</AccuracyLong>
 			<RangedWeapon_Cooldown>0.05</RangedWeapon_Cooldown>
 		</statBases>
+        <costList>
+            <Steel>200</Steel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Plasteel>20</Plasteel>
+        </costList>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
