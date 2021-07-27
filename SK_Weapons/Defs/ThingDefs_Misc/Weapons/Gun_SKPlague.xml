@@ -65,6 +65,7 @@
       <AccuracyMedium>0.65</AccuracyMedium>
       <!-- 远距离命中率 -->
       <AccuracyLong>0.55</AccuracyLong>
+      <!-- 冷却时间 -->
       <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
     </statBases>
     <!-- 武器标签 -->
