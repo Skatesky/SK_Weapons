@@ -15,7 +15,7 @@
         <thingClass>Projectile_Explosive</thingClass>
         <projectile>
             <damageDef>Bomb_SKMagnhild</damageDef>
-            <explosionRadius>2</explosionRadius>
+            <explosionRadius>4</explosionRadius>
             <speed>50</speed>
         </projectile>
     </ThingDef>
@@ -46,7 +46,7 @@
             <AccuracyShort>0.77</AccuracyShort>
             <AccuracyMedium>0.85</AccuracyMedium>
             <AccuracyLong>0.65</AccuracyLong>
-            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
         </statBases>
         <costList>
             <Steel>200</Steel>
@@ -59,7 +59,7 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_SKMagnhild</defaultProjectile>
                 <forcedMissRadius>1</forcedMissRadius>
-                <warmupTime>1.5</warmupTime>
+                <warmupTime>1</warmupTime>
                 <range>45</range>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>Shot_Magnhild</soundCast>

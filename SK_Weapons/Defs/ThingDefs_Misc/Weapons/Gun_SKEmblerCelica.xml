@@ -15,7 +15,7 @@
         <thingClass>Projectile_Explosive</thingClass>
         <projectile>
             <damageDef>Bomb_SKEmberCelica</damageDef>
-            <explosionRadius>0.5</explosionRadius>
+            <explosionRadius>1</explosionRadius>
             <speed>50</speed>
         </projectile>
     </ThingDef>
@@ -46,7 +46,7 @@
             <AccuracyShort>0.77</AccuracyShort>
             <AccuracyMedium>0.38</AccuracyMedium>
             <AccuracyLong>0.20</AccuracyLong>
-            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
         </statBases>
         <costList>
             <Steel>200</Steel>
@@ -61,7 +61,7 @@
                 <forcedMissRadius>0.5</forcedMissRadius>
                 <warmupTime>0.5</warmupTime>
                 <range>30</range>
-                <burstShotCount>3</burstShotCount>
+                <burstShotCount>5</burstShotCount>
                 <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
                 <soundCast>Shot_Shotgun</soundCast>
                 <soundCastTail>GunTail_Light</soundCastTail>
