@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <Bullet_SKCrescentRoseRifle.label>火神之枪子弹</Bullet_SKCrescentRoseRifle.label>
+  <Bullet_SKCrescentRoseRifle.label>红莲之枪子弹</Bullet_SKCrescentRoseRifle.label>
 
 
   <!-- Crescent Rose base weapon, rifle form, craftable -->
 
-  <Gun_SKCrescentRoseRifle.label>火神之枪</Gun_SKCrescentRoseRifle.label>
-  <Gun_SKCrescentRoseRifle.description>火神使用的枪，范围广，伤害高，附带燃烧效果。</Gun_SKCrescentRoseRifle.description>
+  <Gun_SKCrescentRoseRifle.label>红莲</Gun_SKCrescentRoseRifle.label>
+  <Gun_SKCrescentRoseRifle.description>红莲之枪，射程极远，伤害高，战场上可怕的死神。</Gun_SKCrescentRoseRifle.description>
   <Gun_SKCrescentRoseRifle.tools.0.label>弹匣</Gun_SKCrescentRoseRifle.tools.0.label>
   <Gun_SKCrescentRoseRifle.tools.1.label>枪管</Gun_SKCrescentRoseRifle.tools.1.label>
 

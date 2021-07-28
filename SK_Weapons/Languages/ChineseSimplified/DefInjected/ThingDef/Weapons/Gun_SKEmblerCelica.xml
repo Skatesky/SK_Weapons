@@ -8,8 +8,8 @@
 
   <!-- Ember Celica base weapon, melee can do blunt damage, uses the same bomb type for melee and ranged -->
 
-  <Gun_SKEmberCelica.label>灰烬天堂</Gun_SKEmberCelica.label>
-  <Gun_SKEmberCelica.description>灰烬之枪。</Gun_SKEmberCelica.description>
+  <Gun_SKEmberCelica.label>灰烬火炮</Gun_SKEmberCelica.label>
+  <Gun_SKEmberCelica.description>灰烬火炮，能瞬间射出多枚炮弹，将目标炸成灰烬。</Gun_SKEmberCelica.description>
   <Gun_SKEmberCelica.tools.0.label>枪管</Gun_SKEmberCelica.tools.0.label>
  
 

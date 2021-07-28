@@ -69,17 +69,15 @@
     <None Include="Languages\ChineseSimplified\DefInjected\HediffDef\Hediffs_Local_Injuries_RWBY.xml" />
     <None Include="Languages\ChineseSimplified\DefInjected\HediffDef\Hediffs_RWBY.xml" />
     <None Include="Languages\ChineseSimplified\DefInjected\DamageDef\Damages_Keys.xml" />
-    <None Include="Languages\ChineseSimplified\DefInjected\ThingDefs_Misc\Weapons\Gun_CrescentRose.xml" />
-    <None Include="Languages\ChineseSimplified\DefInjected\ThingDefs_Misc\Weapons\Gun_SKCoco.xml" />
-    <None Include="Languages\ChineseSimplified\DefInjected\ThingDefs_Misc\Weapons\Gun_SKEmblerCelica.xml" />
-    <None Include="Languages\ChineseSimplified\DefInjected\ThingDefs_Misc\Weapons\Gun_SKMagnhild.xml" />
-    <None Include="Languages\ChineseSimplified\DefInjected\ThingDefs_Misc\Weapons\Gun_SKStormFlower.xml" />
-    <None Include="Languages\ChineseSimplified\DefInjected\ThingDefs_Misc\Weapons\Melee_SKCinderScimitar.xml" />
     <None Include="Languages\ChineseSimplified\Keyed\Gun_SKPlague_Keys.xml" />
+    <None Include="Languages\ChineseSimplified\DefInjected\ThingDef\Weapons\Gun_SKMagnhild.xml" />
+    <None Include="Languages\ChineseSimplified\DefInjected\ThingDef\Weapons\Melee_SKCinderScimitar.xml" />
+    <None Include="Languages\ChineseSimplified\DefInjected\ThingDef\Weapons\Gun_CrescentRose.xml" />
+    <None Include="Languages\ChineseSimplified\DefInjected\ThingDef\Weapons\Gun_SKCoco.xml" />
+    <None Include="Languages\ChineseSimplified\DefInjected\ThingDef\Weapons\Gun_SKEmblerCelica.xml" />
+    <None Include="Languages\ChineseSimplified\DefInjected\ThingDef\Weapons\Gun_SKStormFlower.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Defs\ThingDefs\" />
-    <Folder Include="Languages\ChineseSimplified\DefInjected\ThingDefs_Misc\Weapons\" />
     <Folder Include="Languages\ChineseSimplified\Keyed\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
