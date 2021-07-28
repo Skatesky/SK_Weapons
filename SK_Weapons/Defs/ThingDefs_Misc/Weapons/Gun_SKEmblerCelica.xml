@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <!-- 近距离的炮弹攻击 -->
+    <!-- 中距离的炮弹攻击 -->
 
     <!-- Ember_Celica custom bullet -->
 
@@ -20,7 +20,7 @@
         </projectile>
     </ThingDef>
 
-    <!-- Ember Celica base weapon, melee can do blunt damage, uses the same bomb type for melee and ranged  -->
+    <!-- Ember Celica (灰烬天堂) base weapon, melee can do blunt damage, uses the same bomb type for melee and ranged  -->
 
     <ThingDef ParentName="SK_BaseMakeableGun">
         <defName>Gun_SKEmberCelica</defName>
@@ -44,8 +44,8 @@
             <Mass>2.0</Mass>
             <AccuracyTouch>0.85</AccuracyTouch>
             <AccuracyShort>0.77</AccuracyShort>
-            <AccuracyMedium>0.38</AccuracyMedium>
-            <AccuracyLong>0.20</AccuracyLong>
+            <AccuracyMedium>0.58</AccuracyMedium>
+            <AccuracyLong>0.30</AccuracyLong>
             <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
         </statBases>
         <costList>
