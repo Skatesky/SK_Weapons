@@ -4,34 +4,35 @@
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_SKCoco</defName>
-		<label>Coco's Minigun bullet</label>
+		<label>加特林机枪子弹</label>
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_Small</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>10</damageAmountBase>
+			<damageAmountBase>15</damageAmountBase>
 			<speed>70</speed>
+      		<stoppingPower>0.5</stoppingPower>
 		</projectile>
 	</ThingDef>
     
 	<ThingDef ParentName="SK_BaseMakeableGun">
 		<defName>Gun_SKCoco</defName>
-		<label>Coco's Minigun</label>
-		<description>Coco's Handbag is Coco Adel's weapon of choice. Because of the weight that is concealed in the handbag, it can be used as a powerful bludgeoning weapon.</description>
+		<label>加特林机枪</label>
+		<description>射速很快，属于最快的枪，足以将任何生物射得粉碎，射程较短，伤害较低。</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/Weapons/Coco_Minigun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.6</drawSize>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
-        <recipeMaker>
-            <researchPrerequisite>DustWeapons</researchPrerequisite>
-            <skillRequirements>
-                <Crafting>10</Crafting>
-            </skillRequirements>
-        </recipeMaker>
+    	<recipeMaker>
+			<researchPrerequisite>DustWeapons</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+		</recipeMaker>
 		<statBases>
 			<WorkToMake>30000</WorkToMake>
 			<MarketValue>800</MarketValue>
@@ -42,18 +43,18 @@
 			<AccuracyLong>0.23</AccuracyLong>
 			<RangedWeapon_Cooldown>0.05</RangedWeapon_Cooldown>
 		</statBases>
-        <costList>
-            <Steel>200</Steel>
-            <ComponentIndustrial>2</ComponentIndustrial>
-            <Plasteel>20</Plasteel>
-        </costList>
+   		<costList>
+			<Steel>300</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Plasteel>60</Plasteel>
+		</costList>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_SKCoco</defaultProjectile>
 				<warmupTime>0.05</warmupTime>
-				<range>30</range>
+				<range>33</range>
 				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
 				<soundCast>Shot_Minigun</soundCast>
@@ -63,7 +64,7 @@
 		</verbs>
 		<tools>
 			<li>
-				<label>barrel</label>
+				<label>barrel枪管</label>
 				<capacities>
 					<li>Poke</li>
 				</capacities>

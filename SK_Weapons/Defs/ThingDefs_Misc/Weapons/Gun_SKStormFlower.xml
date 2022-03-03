@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
     
-    <!-- 洛神之枪， 风暴 -->
+    <!-- 烈焰火舌 -->
 
 	<!-- StormFlower custom bullet -->
-
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_SKStormFlower</defName>
 		<label>StormFlower bullet</label>
@@ -14,24 +13,32 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>12</damageAmountBase>
-			<speed>60</speed>
+			<damageAmountBase>20</damageAmountBase>
+			<speed>70</speed>
 		</projectile>
-        <modExtensions>
-            <li Class="SK_Weapons.ModExtension_SKBaseBullet">
-                <addHediffChance>0.05</addHediffChance>
-                <hediffToAdd>Frostbite</hediffToAdd>
-            </li>
-        </modExtensions>
-        <thingClass>SK_Weapons.Projectile_SKBullet</thingClass>
 	</ThingDef>
 
-	<!-- StormFlower base weapon, melee can do slashing/cut damage, electric damage and burning damage, but doesn´t inflame -->
+	<!-- 火焰伤害的子弹 -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_SKStormFlowerFlame</defName>
+		<label>烈焰火舌子弹</label>
+		<graphicData>
+			<texPath>Things/Projectile/StormFlower_Projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+            <damageDef>Flame</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
 
+	<!-- 射速较快，射程较远，可以造成火焰伤害，压制能力很强。 -->
 	<ThingDef ParentName="SK_BaseMakeableGun">
 		<defName>Gun_SKStormFlower</defName>
-		<label>StormFlower</label>
-		<description>StormFlower is Lie Ren's signature weapon. They consist of a pair of fully automatic pistols with sickle-like blades attached vertically under the barrels.</description>
+		<label>烈焰火舌</label>
+		<description>射速较快，射程较远，可以造成火焰伤害，压制能力很强。</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/Weapons/StormFlower</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -41,7 +48,7 @@
 		<recipeMaker>
 			<researchPrerequisite>DustWeapons</researchPrerequisite>
 			<skillRequirements>
-				<Crafting>10</Crafting>
+				<Crafting>12</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<statBases>
@@ -55,9 +62,9 @@
 			<RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
-			<Steel>200</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
-			<Plasteel>20</Plasteel>
+			<Steel>300</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Plasteel>60</Plasteel>
 		</costList>
 		<verbs>
 			<li>
@@ -65,17 +72,17 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_SKStormFlower</defaultProjectile>
 				<warmupTime>0.5</warmupTime>
-				<range>35</range>
+				<range>40</range>
 				<burstShotCount>8</burstShotCount>
 				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-				<soundCast>Shot_StormFlower</soundCast>
+				<soundCast>Bullet_SKStormFlowerFlame</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
 		<tools>
             <li>
-                <label>grip</label>
+                <label>grip把手</label>
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
@@ -83,12 +90,12 @@
                 <cooldownTime>2</cooldownTime>
             </li>
 			<li>
-				<label>barrel</label>
+				<label>barrel枪管</label>
 				<capacities>
 					<li>Cut</li>
                     <li>Poke</li>                  
 				</capacities>
-				<power>19</power>
+				<power>10</power>
 				<cooldownTime>1.2</cooldownTime>
 			</li>
 		</tools>

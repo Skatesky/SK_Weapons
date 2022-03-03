@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <!-- 火神之枪 -->
+    <!-- 洛神之殇 -->
 
 	<!-- Crescent Rose rifle custom bullet -->
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_SKCrescentRoseRifle</defName>
-		<label>Crescent Rose bullet</label>
+		<label>洛神之泪</label>
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_big</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
-            <damageDef>Flame</damageDef>
-			<damageAmountBase>20</damageAmountBase>
-			<stoppingPower>1</stoppingPower>
+      		<damageDef>Frostbite</damageDef>
+			<damageAmountBase>30</damageAmountBase>
+			<stoppingPower>2</stoppingPower>
 			<speed>90</speed>
+      		<armorPenetrationBase>0.4</armorPenetrationBase>
 		</projectile>
 	</ThingDef>
 
@@ -23,8 +24,8 @@
 
 	<ThingDef ParentName="SK_BaseMakeableGun">
 		<defName>Gun_SKCrescentRoseRifle</defName>
-		<label>Crescent Rose</label>
-		<description>Crescent Rose is Ruby Rose's signature weapon. It is a High-Caliber Sniper-Scythe (HCSS) - a hybrid between a scythe and a sniper rifle.</description>
+		<label>洛神之殇</label>
+		<description>射程极远，属于射程最远的枪，伤害较高，附带冰冻效果，缺点是射速慢。</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/Weapons/Crescent_Rose_Rifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -34,23 +35,26 @@
 		<recipeMaker>
 			<researchPrerequisite>DustWeapons</researchPrerequisite>
 			<skillRequirements>
-				<Crafting>10</Crafting>
+				<Crafting>12</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<statBases>
 			<WorkToMake>30000</WorkToMake>
 			<MarketValue>800</MarketValue>
 			<Mass>4</Mass>
-			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyTouch>0.70</AccuracyTouch>
 			<AccuracyShort>0.70</AccuracyShort>
 			<AccuracyMedium>0.85</AccuracyMedium>
 			<AccuracyLong>0.80</AccuracyLong>
-			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
 		</statBases>
+    	<equippedStatOffsets>
+      		<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
+    	</equippedStatOffsets>
 		<costList>
-			<Steel>200</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
-			<Plasteel>20</Plasteel>
+			<Steel>300</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Plasteel>60</Plasteel>
 		</costList>		
 		<verbs>
 			<li>
@@ -58,7 +62,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_SKCrescentRoseRifle</defaultProjectile>				
 				<warmupTime>0.5</warmupTime>
-				<range>45</range>				
+				<range>60</range>				
 				<soundCast>Shot_SniperRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
@@ -66,7 +70,7 @@
 		</verbs>
 		<tools>
 			<li>
-				<label>stock</label>
+				<label>stock枪托</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
@@ -74,7 +78,7 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 			<li>
-				<label>barrel</label>
+				<label>barrel枪管</label>
 				<capacities>
 					<li>Poke</li>					
 				</capacities>

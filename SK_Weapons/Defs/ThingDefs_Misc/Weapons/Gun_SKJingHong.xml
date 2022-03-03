@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- 火神之枪 -->
+
+	<!-- Crescent Rose rifle custom bullet -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_SKJingHong</defName>
+		<label>惊鸿剑气</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_JingHong</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+      		<damageDef>Cut</damageDef>
+			<damageAmountBase>32</damageAmountBase>
+			<stoppingPower>2</stoppingPower>
+			<speed>60</speed>
+     		<armorPenetrationBase>0.3</armorPenetrationBase>
+		</projectile>
+	</ThingDef>
+
+	<!-- Crescent Rose base weapon, rifle form, craftable-->
+
+	<ThingDef ParentName="SK_BaseMakeableGun">
+		<defName>Gun_SKJingHong</defName>
+		<label>惊鸿</label>
+		<description>惊鸿剑，威力强大，近战伤害高，同时能发出3道剑气.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Weapons/JingHong</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+    <equippedAngleOffset>-35</equippedAngleOffset>
+		<recipeMaker>
+			<researchPrerequisite>ChineseAncientWeapons</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>16</Crafting>
+				<Intellectual>10</Intellectual>
+				<Artistic>8</Artistic>
+			</skillRequirements>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>30000</WorkToMake>
+			<MarketValue>800</MarketValue>
+			<Mass>4</Mass>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.70</AccuracyMedium>
+			<AccuracyLong>0.60</AccuracyLong>
+			<RangedWeapon_Cooldown>0.3</RangedWeapon_Cooldown>
+			<!-- 以下是额外参数 -->
+			<Flammability>0</Flammability> <!-- 易燃性 -->
+      		<DeteriorationRate>0.1</DeteriorationRate> <!-- 变质率 -->
+      		<Beauty>10</Beauty> <!-- 美观度 -->
+      		<SellPriceFactor>10</SellPriceFactor> <!-- 售出价格因素 -->
+		</statBases>
+		<costList>
+			<Steel>500</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Plasteel>60</Plasteel>
+		</costList>
+		<equippedStatOffsets>
+			<MeleeDodgeChance>0.3</MeleeDodgeChance>
+			<MentalBreakThreshold>-0.1</MentalBreakThreshold>
+			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_SKJingHong</defaultProjectile>				
+				<warmupTime>0.5</warmupTime>
+				<range>35</range>
+        		<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+				<soundCast>Shot_SniperRifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>0.5</cooldownTime>
+        		<armorPenetration>0.4</armorPenetration>
+        		<extraMeleeDamage>
+          			<li>
+            			<def>Frostbite</def>
+            			<amount>15</amount>
+           				<chance>50.0</chance>
+          			</li>
+       			</extraMeleeDamage>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>					
+				</capacities>
+				<power>15</power>
+				<cooldownTime>0.4</cooldownTime>
+        		<armorPenetration>0.4</armorPenetration>
+        		<extraMeleeDamage>
+          			<li>
+            			<def>Frostbite</def>
+            			<amount>15</amount>
+            			<chance>50.0</chance>
+          			</li>
+        		</extraMeleeDamage>
+			</li>
+		</tools>
+	</ThingDef>	   
+
+</Defs>

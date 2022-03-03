@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <!-- 中距离的炮弹攻击 -->
+    <!-- 近距离的炮弹攻击 -->
 
-    <!-- Ember_Celica custom bullet -->
-
+    <!-- 爆炸伤害的子弹 -->
     <ThingDef ParentName="BaseBullet">
         <defName>Bullet_SKEmberCelica</defName>
         <label>Ember Celica bullet</label>
@@ -15,17 +14,37 @@
         <thingClass>Projectile_Explosive</thingClass>
         <projectile>
             <damageDef>Bomb_SKEmberCelica</damageDef>
-            <explosionRadius>1</explosionRadius>
+            <explosionRadius>1.5</explosionRadius>
             <speed>50</speed>
         </projectile>
     </ThingDef>
 
-    <!-- Ember Celica (灰烬天堂) base weapon, melee can do blunt damage, uses the same bomb type for melee and ranged  -->
+    <!-- Emp伤害的子弹 -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_BombEMP</defName>
+    <label>rocket</label>
+    <graphicData>
+      <texPath>Things/Projectile/Ember_Celica_Projectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageAmountBase>16</damageAmountBase>
+      <speed>50</speed>
+      <damageDef>EMP</damageDef>
+      <explosionRadius>3</explosionRadius>
+      <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.90</preExplosionSpawnChance>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+    </projectile>
+  </ThingDef>
 
+    <!-- 机械克星，五雷轰顶  -->
     <ThingDef ParentName="SK_BaseMakeableGun">
         <defName>Gun_SKEmberCelica</defName>
         <label>Ember_Celica</label>
-        <description>Ember Celica are Yang Xiao Long's signature weapons. They are a pair of Dual Ranged Shot Gauntlets (DRSG).</description>
+        <description>可以发射5颗Emp炸弹的火炮，射程中等，只能造成Emp伤害，堪称机族克星。</description>
         <graphicData>
             <texPath>Things/Item/Equipment/Weapons/Ember_Celica</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -35,7 +54,7 @@
         <recipeMaker>
             <researchPrerequisite>DustWeapons</researchPrerequisite>
             <skillRequirements>
-                <Crafting>10</Crafting>
+                <Crafting>12</Crafting>
             </skillRequirements>
         </recipeMaker>
         <statBases>
@@ -44,22 +63,22 @@
             <Mass>2.0</Mass>
             <AccuracyTouch>0.85</AccuracyTouch>
             <AccuracyShort>0.77</AccuracyShort>
-            <AccuracyMedium>0.58</AccuracyMedium>
-            <AccuracyLong>0.30</AccuracyLong>
-            <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+            <AccuracyMedium>0.38</AccuracyMedium>
+            <AccuracyLong>0.20</AccuracyLong>
+            <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <Steel>200</Steel>
-            <ComponentIndustrial>2</ComponentIndustrial>
-            <Plasteel>20</Plasteel>
+            <Steel>300</Steel>
+            <ComponentIndustrial>3</ComponentIndustrial>
+            <Plasteel>60</Plasteel>
         </costList>
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>Bullet_SKEmberCelica</defaultProjectile>
-                <forcedMissRadius>0.5</forcedMissRadius>
-                <warmupTime>0.5</warmupTime>
+                <defaultProjectile>Bullet_BombEMP</defaultProjectile>
+                <forcedMissRadius>1</forcedMissRadius>
+                <warmupTime>1</warmupTime>
                 <range>30</range>
                 <burstShotCount>5</burstShotCount>
                 <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
@@ -71,12 +90,12 @@
         <equippedAngleOffset>-45</equippedAngleOffset>
         <tools>
             <li>
-                <label>barrel</label>
+                <label>barrel枪管</label>
                 <capacities>
                     <li>Blunt</li>
                     <li>Bomb_SKEmberCelica</li>
                 </capacities>
-                <power>13</power>
+                <power>15</power>
                 <cooldownTime>0.8</cooldownTime>
             </li>
         </tools>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- 重剑无锋-->
+
+	<!-- 定义子弹 -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_SKWuFeng</defName>
+		<label>无锋剑气</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_WuFeng</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+      		<damageDef>Crush</damageDef>
+			<damageAmountBase>35</damageAmountBase>
+			<stoppingPower>5</stoppingPower>
+			<speed>90</speed>
+      		<armorPenetrationBase>0.4</armorPenetrationBase> <!-- 护甲穿透 -->
+		</projectile>
+	</ThingDef>
+
+	<!-- 定义枪支 -->
+	<ThingDef ParentName="SK_BaseMakeableGun">
+		<defName>Gun_SKWuFeng</defName>
+		<label>重剑无锋</label>
+		<description>重剑无锋，大巧不工。威力强大，近战伤害高，能发出远程剑气，具有很强的抑制能力.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Weapons/WuFeng</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>ChineseAncientWeapons</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>16</Crafting>
+				<Intellectual>10</Intellectual>
+				<Artistic>8</Artistic>
+			</skillRequirements>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>30000</WorkToMake>
+			<MarketValue>800</MarketValue>
+			<Mass>4</Mass>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.80</AccuracyMedium>
+			<AccuracyLong>0.80</AccuracyLong>
+			<RangedWeapon_Cooldown>0.3</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>500</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Plasteel>60</Plasteel>
+		</costList>
+		<equippedStatOffsets>
+			<MeleeDodgeChance>0.1</MeleeDodgeChance>
+			<MoveSpeed>0.1</MoveSpeed>
+			<MentalBreakThreshold>-0.1</MentalBreakThreshold>
+			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_SKWuFeng</defaultProjectile>				
+				<warmupTime>1.5</warmupTime>
+				<range>55</range>
+				<soundCast>Shot_SniperRifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>head刀锋</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>0.5</cooldownTime>
+        		<armorPenetration>0.2</armorPenetration>
+        		<extraMeleeDamage>
+					<li>
+						<def>EMP</def>
+						<amount>15</amount>
+						<chance>50.0</chance>
+					</li>
+        		</extraMeleeDamage>
+			</li>
+			<li>
+				<label>edge刀刃</label>
+				<capacities>
+					<li>Thump</li>					
+				</capacities>
+				<power>16</power>
+				<cooldownTime>0.4</cooldownTime>
+        		<armorPenetration>0.2</armorPenetration>
+        		<extraMeleeDamage>
+					<li>
+						<def>Stun</def>
+						<amount>15</amount>
+						<chance>50.0</chance>
+					</li>
+				</extraMeleeDamage>
+			</li>
+		</tools>
+	</ThingDef>	   
+
+</Defs>

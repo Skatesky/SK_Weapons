@@ -1,12 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <!-- 死神之枪，范围攻击 -->
+    <!-- 神威火炮，范围攻击 -->
 
-    <!-- Magnhild custom bullet -->
-
+    <!-- 神威炮弹 -->
     <ThingDef ParentName="BaseBullet">
         <defName>Bullet_SKMagnhild</defName>
-        <label>rocket</label>
+        <label>神威炮弹</label>
         <graphicData>
             <texPath>Things/Projectile/Magnhild_Projectile</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -20,12 +19,33 @@
         </projectile>
     </ThingDef>
 
-    <!-- Magnhild base weapon, grenade launcher form, craftable-->
+    <!-- 火焰炮弹 -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>Bullet_BombFlame</defName>
+        <label>rocket</label>
+        <graphicData>
+        <texPath>Things/Projectile/Magnhild_Projectile</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <thingClass>Projectile_Explosive</thingClass>
+        <projectile>
+        <damageAmountBase>25</damageAmountBase>
+        <speed>50</speed>
+        <damageDef>Flame</damageDef>
+        <explosionRadius>3</explosionRadius>
+        <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+        <preExplosionSpawnChance>0.90</preExplosionSpawnChance>
+        <ai_IsIncendiary>true</ai_IsIncendiary>
+        </projectile>
+    </ThingDef>
 
+
+    <!-- Magnhild base weapon, grenade launcher form, craftable-->
     <ThingDef ParentName="SK_BaseMakeableGun">
         <defName>Gun_SKMagnhild</defName>
-        <label>Magnhild</label>
-        <description>Magnhild is Nora Valkyrie's signature weapon. It is a large hammer, with the secondary form of a grenade launcher.</description>
+        <label>神威火炮</label>
+        <description>射程仅次于洛神之殇的火炮，爆炸范围较大，伤害可观，不过射速较慢。</description>
         <graphicData>
             <texPath>Things/Item/Equipment/Weapons/Magnhild_Launcher</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -35,23 +55,28 @@
         <recipeMaker>
             <researchPrerequisite>DustWeapons</researchPrerequisite>
             <skillRequirements>
-                <Crafting>10</Crafting>
+                <Crafting>12</Crafting>
             </skillRequirements>
         </recipeMaker>
         <statBases>
             <WorkToMake>30000</WorkToMake>
             <MarketValue>800</MarketValue>
-            <Mass>2.0</Mass>
+            <Mass>6</Mass>
             <AccuracyTouch>0.65</AccuracyTouch>
             <AccuracyShort>0.77</AccuracyShort>
-            <AccuracyMedium>0.85</AccuracyMedium>
-            <AccuracyLong>0.65</AccuracyLong>
-            <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+            <AccuracyMedium>0.88</AccuracyMedium>
+            <AccuracyLong>0.60</AccuracyLong>
+            <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
         </statBases>
+        <equippedStatOffsets>
+          <MoveSpeed>-0.1</MoveSpeed>
+          <MeleeDodgeChance>-0.1</MeleeDodgeChance>
+          <MentalBreakThreshold>-0.1</MentalBreakThreshold>
+        </equippedStatOffsets>
         <costList>
-            <Steel>200</Steel>
-            <ComponentIndustrial>2</ComponentIndustrial>
-            <Plasteel>20</Plasteel>
+            <Steel>300</Steel>
+            <ComponentIndustrial>3</ComponentIndustrial>
+            <Plasteel>60</Plasteel>
         </costList>
         <verbs>
             <li>
@@ -59,7 +84,7 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_SKMagnhild</defaultProjectile>
                 <forcedMissRadius>1</forcedMissRadius>
-                <warmupTime>1</warmupTime>
+                <warmupTime>1.5</warmupTime>
                 <range>45</range>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>Shot_Magnhild</soundCast>
@@ -70,8 +95,15 @@
         <tools>
             <!-- 操作列表 -->
             <li>
-                <!-- 操作列表 战斗时的 -->
-                <label>barrel</label>
+                <label>grip把手</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel枪管</label>
                 <capacities>
                     <li>Blunt</li>
                     <li>Poke</li>
