@@ -39,7 +39,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<statBases>
-			<WorkToMake>30000</WorkToMake>
+			<WorkToMake>60000</WorkToMake>
 			<MarketValue>800</MarketValue>
 			<Mass>4</Mass>
 			<AccuracyTouch>0.90</AccuracyTouch>
@@ -50,13 +50,12 @@
 		</statBases>
 		<costList>
 			<Steel>500</Steel>
-			<ComponentIndustrial>3</ComponentIndustrial>
-			<Plasteel>60</Plasteel>
+			<Plasteel>200</Plasteel>
 		</costList>
 		<equippedStatOffsets>
-			<MeleeDodgeChance>0.1</MeleeDodgeChance>
-			<MoveSpeed>0.1</MoveSpeed>
-			<MentalBreakThreshold>-0.1</MentalBreakThreshold>
+			<MeleeDodgeChance>0.1</MeleeDodgeChance> <!-- 近战闪避几率 -->
+			<MoveSpeed>0.1</MoveSpeed> <!-- 移动速度 -->
+			<MentalBreakThreshold>-0.1</MentalBreakThreshold> <!-- 精神阈值 -->
 			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
 		</equippedStatOffsets>
 		<verbs>

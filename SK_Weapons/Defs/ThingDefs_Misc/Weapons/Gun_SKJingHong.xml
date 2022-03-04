@@ -32,7 +32,8 @@
 			<drawSize>1.5</drawSize>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
-    <equippedAngleOffset>-35</equippedAngleOffset>
+    	<equippedAngleOffset>-35</equippedAngleOffset>
+		<!-- 配方制作者 -->
 		<recipeMaker>
 			<researchPrerequisite>ChineseAncientWeapons</researchPrerequisite>
 			<skillRequirements>
@@ -41,30 +42,80 @@
 				<Artistic>8</Artistic>
 			</skillRequirements>
 		</recipeMaker>
+		<!-- 基本属性 -->
 		<statBases>
-			<WorkToMake>30000</WorkToMake>
+			<WorkToMake>60000</WorkToMake>
 			<MarketValue>800</MarketValue>
-			<Mass>4</Mass>
+			<Mass>4</Mass> <!-- 质量 -->
 			<AccuracyTouch>0.90</AccuracyTouch>
 			<AccuracyShort>0.80</AccuracyShort>
 			<AccuracyMedium>0.70</AccuracyMedium>
 			<AccuracyLong>0.60</AccuracyLong>
 			<RangedWeapon_Cooldown>0.3</RangedWeapon_Cooldown>
 			<!-- 以下是额外参数 -->
+			<MaxHitPoints>500</MaxHitPoints>  <!-- 最大生命值 -->
 			<Flammability>0</Flammability> <!-- 易燃性 -->
       		<DeteriorationRate>0.1</DeteriorationRate> <!-- 变质率 -->
-      		<Beauty>10</Beauty> <!-- 美观度 -->
+      		<Beauty>50</Beauty> <!-- 美观度 -->
       		<SellPriceFactor>10</SellPriceFactor> <!-- 售出价格因素 -->
+      		<EquipDelay>1</EquipDelay> <!-- 装备延迟 -->
+			<Insulation_Heat>30</Insulation_Heat> <!-- 隔热 -->
+			<Insulation_Cold>30</Insulation_Cold> <!-- 耐寒 -->
+			<!-- 护甲 -->
+      		<!-- <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+      		<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+      		<ArmorRating_Heat>0.3</ArmorRating_Heat> -->
 		</statBases>
 		<costList>
 			<Steel>500</Steel>
-			<ComponentIndustrial>3</ComponentIndustrial>
-			<Plasteel>60</Plasteel>
+			<Plasteel>200</Plasteel>
 		</costList>
+		<!-- 装备附加 -->
 		<equippedStatOffsets>
-			<MeleeDodgeChance>0.3</MeleeDodgeChance>
-			<MentalBreakThreshold>-0.1</MentalBreakThreshold>
-			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
+			<MeleeDodgeChance>0.3</MeleeDodgeChance> <!-- 近战闪避几率 -->
+			<MeleeHitChance>4</MeleeHitChance> <!-- 近战命中几率 -->
+			<MentalBreakThreshold>-0.1</MentalBreakThreshold> <!-- 精神阈值 -->
+			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn> <!-- 射击精度 -->
+			<ToxicSensitivity>-0.3</ToxicSensitivity> <!-- 毒物敏感性 -->
+			<ImmunityGainSpeed>0.3</ImmunityGainSpeed>  <!-- 免疫力获得速度 -->
+			<PsychicSensitivity>-0.3</PsychicSensitivity> <!-- 心灵敏感度 -->
+			<MoveSpeed>0.1</MoveSpeed>  <!-- 移动速度 -->
+			<!-- <MedicalTendQuality>0.3</MedicalTendQuality>  医疗质量 -->
+			<!-- <TradePriceImprovement>0.2</TradePriceImprovement> 交易价格提升 -->
+			<!-- <SocialImpact>0.5</SocialImpact> 社交影响 -->
+			<!-- <ResearchSpeed>1</ResearchSpeed> 研究速度 -->
+			<!-- <SculptingSpeed>1</SculptingSpeed> 雕刻速度 -->
+			<!-- <TameAnimalChance>0.5</TameAnimalChance> 动物驯服几率 -->
+			<!-- <TrainAnimalChance>0.5</TrainAnimalChance> 训练动物成功几率 -->
+			<!-- <WorkSpeedGlobal>1</WorkSpeedGlobal> 全局工作速度 -->
+			<!-- <PainShockThreshold>0.15</PainShockThreshold> 疼痛休克阈值 -->
+			<!-- <NegotiationAbility>-0.5</NegotiationAbility> 谈判能力 -->
+			<!-- <AimingDelayFactor>-0.7</AimingDelayFactor> 瞄准延迟 -->
+			<!-- <EatingSpeed>0.5</EatingSpeed> 进食速度 -->
+			<!-- <ConstructionSpeed>0.5</ConstructionSpeed> 建造速度 -->
+			<!-- <SmithingSpeed>0.5</SmithingSpeed> 锻造速度 -->
+			<!-- <TailoringSpeed>0.5</TailoringSpeed> 缝制速度 -->
+			<!-- <GlobalLearningFactor>1.0</GlobalLearningFactor> 全局学习速度 -->
+			<!-- <PlantWorkSpeed>0.7</PlantWorkSpeed> 种植速度 -->
+          	<!-- <PlantHarvestYield>0.5</PlantHarvestYield> 种植收获率 -->
+			<!-- <ForagedNutritionPerDay>0.7</ForagedNutritionPerDay> 每日营养采集量 -->
+			<!-- <AnimalGatherSpeed>0.7</AnimalGatherSpeed> 动物收集速度 -->
+		  	<!-- <AnimalGatherYield>0.5</AnimalGatherYield> 动物收获产出 -->
+			<!-- <ComfyTemperatureMin>-90</ComfyTemperatureMin> 最低舒适温度 -->
+			<!-- <ComfyTemperatureMax>50</ComfyTemperatureMax> 最高舒适温度 -->
+			<!-- <IncomingDamageFactor>0.55</IncomingDamageFactor> 来袭伤害系数 -->
+			<!-- <RestRateMultiplier>0.80</RestRateMultiplier> 休息速度 -->
+			<!-- <ConstructSuccessChance>-0.4</ConstructSuccessChance> 建造成功率 -->
+			<!-- <FixBrokenDownBuildingSuccessChance>-0.4</FixBrokenDownBuildingSuccessChance> 修复成功几率 -->
+			<!-- <FoodPoisonChance>4.0</FoodPoisonChance> 食物中毒几率 -->
+			<!-- <HuntingStealth>0.4</HuntingStealth> 狩猎隐蔽性 -->
+			<!-- <PawnTrapSpringChance>0</PawnTrapSpringChance>	触发陷阱几率 -->
+			<!-- <MedicalSurgerySuccessChance>1.20</MedicalSurgerySuccessChance> 医疗成功几率 -->
+			<!-- <MedicalOperationSpeed>0.8</MedicalOperationSpeed> 手术速度 -->
+			<!-- <GeneralLaborSpeed>0.5</GeneralLaborSpeed> 一般工作速度 -->
+			<!-- <ButcheryMechanoidSpeed>0.5</ButcheryMechanoidSpeed> 机械拆解速度 -->
+          	<!-- <ButcheryMechanoidEfficiency>0.2</ButcheryMechanoidEfficiency> 机械拆解效率 -->
+		  	<!-- <SmeltingSpeed>1.2</SmeltingSpeed> 熔炼速度 -->
 		</equippedStatOffsets>
 		<verbs>
 			<li>

@@ -41,7 +41,7 @@
     </ThingDef>
 
 
-    <!-- Magnhild base weapon, grenade launcher form, craftable-->
+    <!-- 枪支定义 -->
     <ThingDef ParentName="SK_BaseMakeableGun">
         <defName>Gun_SKMagnhild</defName>
         <label>神威火炮</label>
@@ -75,7 +75,7 @@
         </equippedStatOffsets>
         <costList>
             <Steel>300</Steel>
-            <ComponentIndustrial>3</ComponentIndustrial>
+            <ComponentSpacer>3</ComponentSpacer>
             <Plasteel>60</Plasteel>
         </costList>
         <verbs>

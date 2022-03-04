@@ -37,6 +37,9 @@
 			<skillRequirements>
 				<Crafting>12</Crafting>
 			</skillRequirements>
+			<!-- <recipeUsers Inherit="False">
+        		<li>FabricationBench</li>
+      		</recipeUsers> -->
 		</recipeMaker>
 		<statBases>
 			<WorkToMake>30000</WorkToMake>
@@ -53,7 +56,7 @@
     	</equippedStatOffsets>
 		<costList>
 			<Steel>300</Steel>
-			<ComponentIndustrial>3</ComponentIndustrial>
+			<ComponentSpacer>3</ComponentSpacer>
 			<Plasteel>60</Plasteel>
 		</costList>		
 		<verbs>
@@ -62,7 +65,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_SKCrescentRoseRifle</defaultProjectile>				
 				<warmupTime>0.5</warmupTime>
-				<range>60</range>				
+				<range>55</range>				
 				<soundCast>Shot_SniperRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>

@@ -6,7 +6,7 @@
     <label>晶尘武器</label>
     <description>超越时代的武器，特色鲜明，威力巨大</description>
     <baseCost>5000</baseCost>
-    <techLevel>Industrial</techLevel>
+    <techLevel>Spacer</techLevel>
     <prerequisites>
       <li>MicroelectronicsBasics</li>
 	    <li>Gunsmithing</li>

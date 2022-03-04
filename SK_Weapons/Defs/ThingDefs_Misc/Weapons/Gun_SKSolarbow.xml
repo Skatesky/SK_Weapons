@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- 枪支定义 -->
+<ThingDef ParentName="SK_BaseMakeableGun">
+    <defName>Gun_SKSolarbow</defName>
+    <label>射日弓</label>
+    <description>传说中射日的弓，极高的射程和伤害，箭矢会爆炸，并产生火焰。</description>
+    <!-- <techLevel>Spacer</techLevel> -->
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapons/SolarBow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeLance</soundInteract>
+    <statBases>
+      <Mass>4</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.65</AccuracyLong>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+      <WorkToMake>60000</WorkToMake>
+      <!-- 以下是额外参数 -->
+      <MaxHitPoints>500</MaxHitPoints> <!-- 最大生命值 -->
+			<Flammability>0</Flammability> <!-- 易燃性 -->
+      <DeteriorationRate>0.1</DeteriorationRate> <!-- 变质率 -->
+      <Beauty>10</Beauty> <!-- 美观度 -->
+      <SellPriceFactor>10</SellPriceFactor> <!-- 售出价格因素 -->
+      <EquipDelay>1</EquipDelay> <!-- 装备延迟 -->
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>ChineseAncientWeapons</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>16</Crafting>
+				<Intellectual>10</Intellectual>
+				<Artistic>8</Artistic>
+			</skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>500</Steel>
+			<Plasteel>200</Plasteel>
+    </costList>
+    <equippedStatOffsets>
+			<MeleeDodgeChance>0.1</MeleeDodgeChance>
+			<MentalBreakThreshold>-0.1</MentalBreakThreshold>
+			<ShootingAccuracyPawn>0.2</ShootingAccuracyPawn>
+      <MoveSpeed>0.1</MoveSpeed>
+      <ToxicSensitivity>-0.3</ToxicSensitivity> <!-- 毒物敏感性 -->
+      <PsychicSensitivity>-0.3</PsychicSensitivity> <!-- 心灵敏感度 -->
+      <!-- <Flammability>-0.5</Flammability> -->
+		</equippedStatOffsets>
+    <weaponTags>
+      <li>SpacerGun</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SKSolarbow</defaultProjectile>
+        <warmupTime>1.7</warmupTime>
+        <range>80</range>
+        <soundCast>ChargeLance_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+		    <targetParams>
+			    <canTargetLocations>true</canTargetLocations>
+		    </targetParams>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>limb弓臂</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- 定义爆炸弓箭 -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SKSolarbow</defName>
+    <label>射日弓箭</label>
+    <graphicData>
+      <texPath>Things/Projectile/ChargeLanceShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	    <drawSize>1.5</drawSize>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>100</speed>
+      <damageDef>Bomb</damageDef>
+      <explosionRadius>2</explosionRadius>
+	    <damageAmountBase>20</damageAmountBase>
+	    <armorPenetrationBase>0.4</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+</Defs>

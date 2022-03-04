@@ -21,19 +21,19 @@
 			</skillRequirements>
 		</recipeMaker>
 		<statBases>
-			<WorkToMake>30000</WorkToMake>
+			<WorkToMake>60000</WorkToMake>
 			<MarketValue>800</MarketValue>
 			<Mass>2.0</Mass>
 		</statBases>
 		<equippedAngleOffset>-55</equippedAngleOffset>
 		<equippedStatOffsets>
 			<MeleeDodgeChance>0.5</MeleeDodgeChance>
-			<Flammability>-1.0</Flammability>
+			<MeleeHitChance>4</MeleeHitChance>
+			<Flammability>-1.0</Flammability> <!-- 易燃性 -->
 		</equippedStatOffsets>
 		<costList>
 			<Steel>500</Steel>
-			<ComponentIndustrial>3</ComponentIndustrial>
-			<Plasteel>60</Plasteel>
+			<Plasteel>200</Plasteel>
 		</costList>		
 		<tools>
 			<li>
