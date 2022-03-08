@@ -41,32 +41,32 @@
 				<capacities>
 					<li>SK_Inflame_Slash</li>
 				</capacities>
-				<power>35</power>
+				<power>20</power>
         		<armorPenetration>0.4</armorPenetration>
 				<cooldownTime>1.3</cooldownTime>
-				<extraMeleeDamage>
+				<extraMeleeDamages>
 					<li>
 						<def>Stun</def>
 						<amount>15</amount>
 						<chance>50.0</chance>
 					</li>
-				</extraMeleeDamage>
+				</extraMeleeDamages>
 			</li>
 			<li>
 				<label>point刀刃</label>
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>30</power>
+				<power>25</power>
         		<armorPenetration>0.5</armorPenetration>
-				<cooldownTime>1.5</cooldownTime>
-				<extraMeleeDamage>
+				<cooldownTime>1.0</cooldownTime>
+				<extraMeleeDamages>
 					<li>
 						<def>EMP</def>
 						<amount>15</amount>
-						<chance>50.0</chance>
+						<chance>80.0</chance>
 					</li>
-				</extraMeleeDamage>
+				</extraMeleeDamages>
 			</li>
 		</tools>
 	</ThingDef>

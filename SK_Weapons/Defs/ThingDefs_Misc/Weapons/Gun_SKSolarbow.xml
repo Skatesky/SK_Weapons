@@ -74,9 +74,32 @@
           <li>Blunt</li>
           <li>Poke</li>
         </capacities>
-        <power>9</power>
+        <power>12</power>
         <cooldownTime>1</cooldownTime>
+        <extraMeleeDamages>
+					<li>
+						<def>Flame</def>
+						<amount>15</amount>
+						<chance>50.0</chance>
+					</li>
+				</extraMeleeDamages>
       </li>
+      <li>
+				<label>point(箭头)</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>1</cooldownTime>
+        <armorPenetration>0.4</armorPenetration>
+        <extraMeleeDamages>
+            <li>
+              <def>Flame</def>
+              <amount>15</amount>
+              <chance>50.0</chance>
+            </li>
+        </extraMeleeDamages>
+			</li>
     </tools>
   </ThingDef>
   
@@ -95,7 +118,7 @@
       <speed>100</speed>
       <damageDef>Bomb</damageDef>
       <explosionRadius>2</explosionRadius>
-	    <damageAmountBase>20</damageAmountBase>
+	    <damageAmountBase>25</damageAmountBase>
 	    <armorPenetrationBase>0.4</armorPenetrationBase>
     </projectile>
   </ThingDef>

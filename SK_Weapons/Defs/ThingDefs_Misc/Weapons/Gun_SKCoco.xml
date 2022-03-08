@@ -46,14 +46,14 @@
    		<costList>
 			<Steel>300</Steel>
 			<ComponentSpacer>3</ComponentSpacer>
-			<Plasteel>60</Plasteel>
+			<Plasteel>100</Plasteel>
 		</costList>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_SKCoco</defaultProjectile>
-				<warmupTime>0.05</warmupTime>
+				<warmupTime>0.1</warmupTime>
 				<range>33</range>
 				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>1</ticksBetweenBurstShots>

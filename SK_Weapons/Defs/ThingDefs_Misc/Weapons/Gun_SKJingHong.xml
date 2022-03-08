@@ -133,36 +133,36 @@
 		</verbs>
 		<tools>
 			<li>
-				<label>point</label>
+				<label>point(剑尖)</label>
 				<capacities>
 					<li>Stab</li>
 				</capacities>
 				<power>16</power>
 				<cooldownTime>0.5</cooldownTime>
         		<armorPenetration>0.4</armorPenetration>
-        		<extraMeleeDamage>
+        		<extraMeleeDamages>
           			<li>
             			<def>Frostbite</def>
             			<amount>15</amount>
            				<chance>50.0</chance>
           			</li>
-       			</extraMeleeDamage>
+       			</extraMeleeDamages>
 			</li>
 			<li>
-				<label>edge</label>
+				<label>edge(剑刃)</label>
 				<capacities>
 					<li>Cut</li>					
 				</capacities>
 				<power>15</power>
 				<cooldownTime>0.4</cooldownTime>
         		<armorPenetration>0.4</armorPenetration>
-        		<extraMeleeDamage>
+        		<extraMeleeDamages>
           			<li>
             			<def>Frostbite</def>
             			<amount>15</amount>
             			<chance>50.0</chance>
           			</li>
-        		</extraMeleeDamage>
+        		</extraMeleeDamages>
 			</li>
 		</tools>
 	</ThingDef>	   

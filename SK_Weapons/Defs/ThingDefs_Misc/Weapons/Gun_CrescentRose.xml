@@ -13,7 +13,7 @@
 		</graphicData>
 		<projectile>
       		<damageDef>Frostbite</damageDef>
-			<damageAmountBase>30</damageAmountBase>
+			<damageAmountBase>20</damageAmountBase>
 			<stoppingPower>2</stoppingPower>
 			<speed>90</speed>
       		<armorPenetrationBase>0.4</armorPenetrationBase>
@@ -57,15 +57,15 @@
 		<costList>
 			<Steel>300</Steel>
 			<ComponentSpacer>3</ComponentSpacer>
-			<Plasteel>60</Plasteel>
+			<Plasteel>100</Plasteel>
 		</costList>		
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_SKCrescentRoseRifle</defaultProjectile>				
-				<warmupTime>0.5</warmupTime>
-				<range>55</range>				
+				<warmupTime>0.8</warmupTime>
+				<range>60</range>				
 				<soundCast>Shot_SniperRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>

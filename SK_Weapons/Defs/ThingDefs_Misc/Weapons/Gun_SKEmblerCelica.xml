@@ -70,7 +70,7 @@
         <costList>
             <Steel>300</Steel>
             <ComponentSpacer>3</ComponentSpacer>
-            <Plasteel>60</Plasteel>
+            <Plasteel>100</Plasteel>
         </costList>
         <verbs>
             <li>
@@ -78,7 +78,7 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_BombEMP</defaultProjectile>
                 <forcedMissRadius>1</forcedMissRadius>
-                <warmupTime>1</warmupTime>
+                <warmupTime>2</warmupTime>
                 <range>30</range>
                 <burstShotCount>5</burstShotCount>
                 <ticksBetweenBurstShots>5</ticksBetweenBurstShots>

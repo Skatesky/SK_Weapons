@@ -28,7 +28,7 @@
 		</graphicData>
 		<projectile>
             <damageDef>Flame</damageDef>
-			<damageAmountBase>20</damageAmountBase>
+			<damageAmountBase>18</damageAmountBase>
 			<stoppingPower>1</stoppingPower>
 			<speed>70</speed>
 		</projectile>

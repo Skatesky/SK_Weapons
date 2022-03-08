@@ -72,36 +72,36 @@
 		</verbs>
 		<tools>
 			<li>
-				<label>head刀锋</label>
+				<label>head剑锋</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
 				<power>16</power>
-				<cooldownTime>0.5</cooldownTime>
+				<cooldownTime>2</cooldownTime>
         		<armorPenetration>0.2</armorPenetration>
-        		<extraMeleeDamage>
+        		<extraMeleeDamages>
 					<li>
 						<def>EMP</def>
 						<amount>15</amount>
 						<chance>50.0</chance>
 					</li>
-        		</extraMeleeDamage>
+        		</extraMeleeDamages>
 			</li>
 			<li>
-				<label>edge刀刃</label>
+				<label>edge剑刃</label>
 				<capacities>
 					<li>Thump</li>					
 				</capacities>
 				<power>16</power>
-				<cooldownTime>0.4</cooldownTime>
-        		<armorPenetration>0.2</armorPenetration>
-        		<extraMeleeDamage>
+				<cooldownTime>1</cooldownTime>
+        		<armorPenetration>0.3</armorPenetration>
+        		<extraMeleeDamages>
 					<li>
 						<def>Stun</def>
 						<amount>15</amount>
 						<chance>50.0</chance>
 					</li>
-				</extraMeleeDamage>
+				</extraMeleeDamages>
 			</li>
 		</tools>
 	</ThingDef>	   

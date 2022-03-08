@@ -19,11 +19,11 @@
 				<compClass>CompQuality</compClass>
 			</li>
 		</comps>
-		<!-- 交易类型 -->
+		<!-- 交易类型，影响交易的商人 -->
 		<tradeTags>
       		<li>Artifact</li> <!-- ExoticMisc -->
     	</tradeTags>
-		<tradeability>unSellable</tradeability> <!-- Sellable 是否可售卖 -->
+		<tradeability>Never</tradeability> <!-- Sellable 是否可售卖 unSellable? -->
 	</ThingDef>
 
 	<!-- melee weapons that are craftable at the machining table, also needs gunsmithing, because every weapon is also a gun -->
@@ -65,7 +65,7 @@
 		<tradeTags>
       		<li>Artifact</li> <!-- ExoticMisc -->
     	</tradeTags>
-		<tradeability>unSellable</tradeability> <!-- Sellable 是否可售卖 -->
+		<tradeability>Never</tradeability> <!-- Sellable 是否可售卖 unSellable? -->
 	</ThingDef>
 
 	<!-- craftable ranged weapons-->
